@@ -8,7 +8,7 @@ import Events from './Pages/Events/event';
 import Gallery from './Pages/Gallery/gallery';
 import Blogs from './Pages/Blog/blog';
 import Contact from './Pages/Contact/contact';
-
+import Footer from './Components/Footer/footer';
 const App = () => {
   return (
     <Router>
@@ -22,6 +22,8 @@ const App = () => {
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
+      <Footer />
+
     </Router>
   );
 };
