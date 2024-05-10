@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { NavLink, useLocation } from 'react-router-dom';
 import kaews_logo from "./kaews_logo.png";
+
 const navLinks = [
   { to: "/", text: "Home" },
   { to: "/about", text: "About" },
@@ -13,9 +14,26 @@ const navLinks = [
 
 const Navbar2 = () => {
   const location = useLocation();
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   return (
-    <div className="flex fixed w-[100%] bg-opacity-100 bg-[#ffffff] justify-between py-2 z-50 md:px-10 xl:px-28">
+    <div className={`flex ${isScrolled ? 'fixed top-0 left-0 right-0 z-50' : 'sticky'} bg-[#ffffff] justify-between py-2 md:px-10 xl:px-28 ${isScrolled ? 'shadow-lg' : ''}`}>
       <div className="flex justify-between">
         <div className="m-3">
           <img src={kaews_logo} alt="logo" className="h-10  w-10" />
@@ -29,24 +47,21 @@ const Navbar2 = () => {
       </div>
 
       <div className="flex justify-between items-center pb-1">
-  {navLinks.map((link, index) => (
-    <div key={index} className="px-2 mx-2">
-      <NavLink
-        to={link.to}
-        className={`text-black p-2 md:text-md xl:text-lg font-bold ${
-          location.pathname === link.to ? ' border-b-4 border-orange-500' : ''
-        }`}
-      >
-        {link.text}
-      </NavLink>
-    </div>
-  ))}
-</div>
+        {navLinks.map((link, index) => (
+          <div key={index} className="px-2 mx-2">
+            <NavLink
+              to={link.to}
+              className={`text-black p-2 md:text-md xl:text-lg font-bold ${
+                location.pathname === link.to ? ' border-b-4 border-orange-500' : ''
+              }`}
+            >
+              {link.text}
+            </NavLink>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
 
 export default Navbar2;
-
-
-

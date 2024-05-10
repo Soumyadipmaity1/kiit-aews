@@ -9,9 +9,11 @@ import Gallery from './Pages/Gallery/gallery';
 import Blogs from './Pages/Blog/blog';
 import Contact from './Pages/Contact/contact';
 import Footer from './Components/Footer/footer';
+import Navbar1 from './Components/Navbar1/Navbar1';
 const App = () => {
   return (
     <Router>
+      <Navbar1 />
       <Navbar2 />
       <Routes>
         <Route path="/" element={<Home />} />
