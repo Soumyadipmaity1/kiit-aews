@@ -15,6 +15,11 @@ return(
 
     </div>
     <div>
+    <i class='bx bxl-facebook text-[24px] px-6 text-white  hover:bg-black bg-green-500 rounded-full p-2 transform hover:scale-110 transition-transform duration-500' ></i>            
+    <i class='bx bxl-facebook text-[24px] px-6 text-white  hover:bg-black bg-green-500 rounded-full p-2 transform hover:scale-110 transition-transform duration-500' ></i>            
+            <i class='bx bxl-facebook text-[24px] px-6 text-white  hover:bg-black bg-green-500 rounded-full p-2 transform hover:scale-110 transition-transform duration-500' ></i>            
+            <i class='bx bxl-facebook text-[24px] px-6 text-white  hover:bg-black bg-green-500 rounded-full p-2 transform hover:scale-110 transition-transform duration-500' ></i>            
+            <i class='bx bxl-facebook text-[24px] px-6 text-white  hover:bg-black bg-green-500 rounded-full p-2 transform hover:scale-110 transition-transform duration-500' ></i>            
 
     </div>
 </section>

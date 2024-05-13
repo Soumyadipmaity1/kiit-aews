@@ -16,11 +16,9 @@ export default function GuildingPillars() {
                     lorem ipsum dolor sit amet, consectetur adipiscing            lorem ipsum dolor sit amet, consectetur adipiscing
                     lorem ipsum dolor sit amet, consectetur adipiscing            lorem ipsum dolor sit amet, consectetur adipiscing
                     lorem ipsum dolor sit amet, consectetur adipiscing            lorem ipsum dolor sit amet, consectetur adipiscing
+                       lorem ipsum dolor sit amet, consectetur adipiscing            lorem ipsum dolor sit amet, consectetur adipiscing
                     lorem ipsum dolor sit amet, consectetur adipiscing            lorem ipsum dolor sit amet, consectetur adipiscing
-                                                                        lorem ipsum dolor sit amet, consectetur adipiscing
-                    lorem ipsum dolor sit amet, consectetur adipiscing
                 </p>
-
             </div>
             <div class="flex justify-center  -mb-[45px]">
             <i class='bx bx-log-in-circle text-[40px] px-6 text-white  hover:bg-black bg-green-500 rounded-full p-2 transform hover:scale-110 transition-transform duration-500' ></i>            </div>
