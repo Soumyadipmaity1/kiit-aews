@@ -5,7 +5,7 @@ import EnvironmentalSuggestion from "../../Components/SuggestionForGoodEnvironme
 import GuildingPillars from '../../Components/GuidingPillars/GuidingPillars';
 export default function Home() {
     return (
-        <div className= " justify-center items-center ">
+        <div className=" justify-center items-center ">
             <div className="relative bg-home bg-[#fff6a4]">
                 <img className="xl:h-screen w-full" src={bgImage} alt="Backgroundphoto" />
                 <div className="absolute top-0 left-0 right-0 bottom-0 flex flex-col items-center pb-60 justify-center">
@@ -14,18 +14,17 @@ export default function Home() {
 
                 </div>
             </div>
-      
-      <div className='flex justify-center -mt-40'>  <GuildingPillars/>
-        <GuildingPillars/>        
-        <GuildingPillars/>
-        
+
+            <div className='flex justify-center -mt-40'>  <GuildingPillars />
+                <GuildingPillars />
+                <GuildingPillars />
+            </div>
+            <EnvironmentalSuggestion />
+
         </div>
-        <EnvironmentalSuggestion />
-
-     </div>
 
 
-        
+
 
     )
 }
