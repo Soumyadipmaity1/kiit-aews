@@ -3,6 +3,7 @@ import Button from '@mui/material/Button';
 import bgImage from "./BackgroundHome.svg"
 import EnvironmentalSuggestion from "../../Components/SuggestionForGoodEnvironment/Suggestion";
 import GuildingPillars from '../../Components/GuidingPillars/GuidingPillars';
+import WhyChoose from '../../Components/WhyChoose/WhyChoose';
 export default function Home() {
     return (
         <div className=" justify-center items-center ">
@@ -18,6 +19,10 @@ export default function Home() {
             <div className='flex justify-center -mt-40'>  <GuildingPillars />
                 <GuildingPillars />
                 <GuildingPillars />
+            </div>
+            <div className='my-20 p-10'>
+                <h1 className='text-4xl font-bold mb-20 mx-auto text-center'>Why Choose Us?</h1>
+            <WhyChoose />
             </div>
             <EnvironmentalSuggestion />
 
