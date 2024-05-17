@@ -4,6 +4,11 @@ import bgImage from "./BackgroundHome.svg"
 import EnvironmentalSuggestion from "../../Components/SuggestionForGoodEnvironment/Suggestion";
 import GuildingPillars from '../../Components/GuidingPillars/GuidingPillars';
 import WhyChoose from '../../Components/WhyChoose/WhyChoose';
+import TestimonialSlider from '../../Components/TestimonialSlider/TestimonialSlider';
+
+
+
+
 export default function Home() {
     return (
         <div className=" justify-center items-center ">
@@ -25,7 +30,7 @@ export default function Home() {
             <WhyChoose />
             </div>
             <EnvironmentalSuggestion />
-
+            <TestimonialSlider />
         </div>
 
 
