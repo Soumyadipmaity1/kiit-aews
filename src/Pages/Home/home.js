@@ -5,7 +5,7 @@ import EnvironmentalSuggestion from "../../Components/SuggestionForGoodEnvironme
 import GuildingPillars from '../../Components/GuidingPillars/GuidingPillars';
 import WhyChoose from '../../Components/WhyChoose/WhyChoose';
 import TestimonialSlider from '../../Components/TestimonialSlider/TestimonialSlider';
-
+import BlogForHome from '../../Components/BlogsForHomePage/BlogsHomePage';
 
 
 
@@ -31,6 +31,7 @@ export default function Home() {
             </div>
             <EnvironmentalSuggestion />
             <TestimonialSlider />
+            <BlogForHome />
         </div>
 
 
