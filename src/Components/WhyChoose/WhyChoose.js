@@ -2,14 +2,14 @@
 
 export default function WhyChoose() {
     return (
-        <section className="flex px-16 ">
-            <div className="bg-black w-6/12 ">
+        <section className="flex xl:px-16 px-8 ">
+            <div className="bg-black xl:block hiddenw-6/12 ">
                 <img src="" className=""></img>
             </div>
-            <div className="w-1/2">
+            <div className="xl:w-1/2">
 
                 <div className="flex m-5 my-8 ">
-                    <div className="flex w-7/12 m-4 mx-4">
+                    <div className="flex xl:w-7/12 w-1/2 m-4 mx-4">
                         <div className="bg-green-500 rounded-full text-center  item-center flex m-5 h-[68px] p-3 text-white ">
                             <i class='bx bxs-first-aid text-[45px]   '></i>
                         </div>
