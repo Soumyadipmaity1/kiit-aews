@@ -6,7 +6,7 @@ import GuildingPillars from '../../Components/GuidingPillars/GuidingPillars';
 import WhyChoose from '../../Components/WhyChoose/WhyChoose';
 import TestimonialSlider from '../../Components/TestimonialSlider/TestimonialSlider';
 import BlogForHome from '../../Components/BlogsForHomePage/BlogsHomePage';
-
+import PhotoPopUpImages from '../../Components/PhotoPopup/Photopopup';
 
 
 export default function Home() {
@@ -32,6 +32,7 @@ export default function Home() {
             <EnvironmentalSuggestion />
             <TestimonialSlider />
             <BlogForHome />
+            <PhotoPopUpImages />
         </div>
 
 
