@@ -1,11 +1,14 @@
 import HomeStart from "../../Components/HomeStart/HomeStart";
-
 import EnvironmentalSuggestion from "../../Components/SuggestionForGoodEnvironment/Suggestion";
 import GuildingPillars from '../../Components/GuidingPillars/GuidingPillars';
 import WhyChoose from '../../Components/WhyChoose/WhyChoose';
 import TestimonialSlider from '../../Components/TestimonialSlider/TestimonialSlider';
 import PhotoPopUpImages from '../../Components/PhotoPopup/Photopopup';
 import BlogsForHome from '../../Components/BlogsForHomePage/BlogsHomePage';
+import AnalysisCount from "../../Components/AnalysisCount/AnalysisCount";
+
+
+
 
 export default function Home() {
     return (
@@ -16,6 +19,7 @@ export default function Home() {
                 <GuildingPillars />
                 <GuildingPillars />
             </div>
+            <AnalysisCount />
             <div className='my-20 p-10'>
                 <h1 className='text-4xl font-bold mb-20 mx-auto text-center'>Why Choose Us?</h1>
             <WhyChoose />
