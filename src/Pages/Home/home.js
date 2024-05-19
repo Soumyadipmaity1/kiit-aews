@@ -5,9 +5,8 @@ import EnvironmentalSuggestion from "../../Components/SuggestionForGoodEnvironme
 import GuildingPillars from '../../Components/GuidingPillars/GuidingPillars';
 import WhyChoose from '../../Components/WhyChoose/WhyChoose';
 import TestimonialSlider from '../../Components/TestimonialSlider/TestimonialSlider';
-import BlogForHome from '../../Components/BlogsForHomePage/BlogsHomePage';
 import PhotoPopUpImages from '../../Components/PhotoPopup/Photopopup';
-
+import BlogsForHome from '../../Components/BlogsForHomePage/BlogsHomePage';
 
 export default function Home() {
     return (
@@ -31,8 +30,15 @@ export default function Home() {
             </div>
             <EnvironmentalSuggestion />
             <TestimonialSlider />
-            <BlogForHome />
+            <div className='p-20 mx-auto'>
+                <h1 className='text-4xl text-center   mx-auto font-semibold   pb-6'>Latest Blogs Post</h1>
+                <div className='w-60 mx-auto border-green-500 mb-14 border-[3.5px] rounded'></div>
+
+          <BlogsForHome  />
+
+          </div>
             <PhotoPopUpImages />
+      
         </div>
 
 
