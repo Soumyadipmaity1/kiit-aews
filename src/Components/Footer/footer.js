@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 
 import kaews_logo from './kaews_logo.png';
+import FooterIcons from "../FooterIcons/FooterIcons";
 const Footer = () => {
   return (
     <>
@@ -25,38 +26,7 @@ const Footer = () => {
           <i className="fas fa-clock py-2 pr-2"></i> 10am to 8pm
         </p>
       </div>
-      <ul className=" flex justify-start md:pt-10">
-        <li className="mr-[8px] cursor-pointer">
-          <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/kiitelectricalsociety/">
-            <i className="text-3xl mt-5 fab fa-facebook-f hover:bg-white rounded px-2 hover:text-black text-font text-slate-300"></i>
-          </a>
-        </li>
-        <li className="mx-[8px] cursor-pointer">
-          <a target="_blank" rel="noopener noreferrer" href="https://instagram.com/kiit_electrical_society?igshid=MzRlODBiNWFlZA==">
-            <i className="text-3xl mt-5 fab fa-instagram hover:bg-white rounded px-2 hover:text-black text-font text-slate-300"></i>
-          </a>
-        </li>
-        <li className="mx-[8px] cursor-pointer">
-          <a target="_blank" rel="noopener noreferrer" href="https://in.linkedin.com/company/kiit-electrical-society">
-            <i className="text-3xl mt-5 fab fa-linkedin hover:bg-white rounded px-2 hover:text-black text-font text-slate-300"></i>
-          </a>
-        </li>
-        <li className="mx-[8px] cursor-pointer">
-          <a target="_blank" rel="noopener noreferrer" href="https://youtube.com/@kiitelectricalsociety6552?si=VwlOYk_lbrgxOwPZ">
-            <i className="text-3xl mt-5 fab fa-youtube hover:bg-white rounded px-2 hover:text-black text-slate-300"></i>
-          </a>
-        </li>
-        <li className="mx-[8px] cursor-pointer">
-          <a target="_blank" rel="noopener noreferrer" href="https://chat.whatsapp.com/BDq3rFW48nb7dy2RJQNztc">
-            <i className="text-3xl mt-5 fab fa-whatsapp hover:bg-white rounded px-2 hover:text-black text-slate-300"></i>
-          </a>
-        </li>
-        <li className="mx-[8px] cursor-pointer">
-          <a target="_blank" rel="noopener noreferrer" href="https://t.me/+f1btiTNaUu02MDk9">
-            <i className="text-3xl mt-5 fab fa-telegram hover:bg-white rounded px-2 hover:text-black text-slate-300"></i>
-          </a>
-        </li>
-      </ul>
+   <FooterIcons/>
     </div>
 
     <div className=" md:ml-12 xl:ml-0">
@@ -101,41 +71,7 @@ const Footer = () => {
   <img className="mx-auto" src={kaews_logo}  alt=""   />
   <h1 className=" font-bold text-yellow-400 p-5 text-xl">"Build Small, Think Big"</h1>
 </div>
-
-<div>
-<ul className=" flex justify-center p-2">
-          <li className="mx-[5px] cursor-pointer">
-            <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/kiitelectricalsociety/">
-              <i className="text-2xl  fa-brands fa-facebook-f hover:bg-white rounded px-2 hover:text-black text-font text-slate-300"></i>
-            </a>
-          </li>
-          <li className="mx-[5px] cursor-pointer">
-            <a target="_blank" rel="noopener noreferrer" href="https://instagram.com/kiit_electrical_society?igshid=MzRlODBiNWFlZA==">
-              <i className="text-2xl  fa-brands fa-instagram hover:bg-white rounded px-2 hover:text-black text-font text-slate-300"></i>
-            </a>
-          </li>
-          <li className="mx-[5px] cursor-pointer">
-            <a target="_blank" rel="noopener noreferrer" href="https://in.linkedin.com/company/kiit-electrical-society">
-              <i className="text-2xl  fa-brands fa-linkedin hover:bg-white rounded px-2 hover:text-black text-font text-slate-300"></i>
-            </a>
-          </li>
-          <li className="mx-[5px] cursor-pointer">
-            <a target="_blank" rel="noopener noreferrer" href="https://youtube.com/@kiitelectricalsociety6552?si=VwlOYk_lbrgxOwPZ">
-              <i className="text-2xl  fa-brands fa-youtube hover:bg-white rounded px-2 hover:text-black  text-slate-300"></i>
-            </a>
-          </li>
-          <li className="mx-[5px] cursor-pointer">
-          <a target="_blank" rel="noopener noreferrer" href="https://chat.whatsapp.com/BDq3rFW48nb7dy2RJQNztc">
-            <i className="text-2xl fab fa-whatsapp hover:bg-white rounded px-2 hover:text-black text-slate-300"></i>
-          </a>
-        </li>
-        <li className="mx-[5px] cursor-pointer">
-          <a target="_blank" rel="noopener noreferrer" href="https://t.me/+f1btiTNaUu02MDk9">
-            <i className="text-2xl fab fa-telegram hover:bg-white rounded px-2 hover:text-black text-slate-300"></i>
-          </a>
-        </li>
-        </ul>
-</div>
+<FooterIcons/>
 
 <div>
   <h1>Contact Us</h1>
