@@ -41,3 +41,27 @@
   --google-green: #0F9D58;
   --google-blue: #4285F4;
 }
+
+/* BlogPost.css */
+
+.image-container {
+    overflow: hidden;
+  }
+  
+  .image-container:hover .zoom-image {
+    transform: scale(1.1);
+  }
+  
+  .text-container {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .image-container:hover .text-container {
+    transform: scale(1.1);
+  }
+  .team_main_bop_wrapper:hover img{
+    transform: scale(1.2);
+  }
+  .team_main_bop_wrapper:hover{
+    box-shadow: 1px 1px 15px 1px #f97f515e;
+  }  

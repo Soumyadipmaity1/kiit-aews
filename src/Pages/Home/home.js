@@ -6,7 +6,7 @@ import TestimonialSlider from '../../Components/TestimonialSlider/TestimonialSli
 import PhotoPopUpImages from '../../Components/PhotoPopup/Photopopup';
 import BlogsForHome from '../../Components/BlogsForHomePage/BlogsHomePage';
 import AnalysisCount from "../../Components/AnalysisCount/AnalysisCount";
-
+import LeadsCard from "../../Components/Leads/LeadsCard";
 
 
 
@@ -34,7 +34,11 @@ export default function Home() {
 
           </div>
             <PhotoPopUpImages />
-      
+            <div className='flex justify-center items-center'>
+                <LeadsCard />
+                <LeadsCard />
+                <LeadsCard />
+                </div>
         </div>
 
 
