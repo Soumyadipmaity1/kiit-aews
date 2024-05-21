@@ -36,8 +36,7 @@ export default function Home() {
             <PhotoPopUpImages />
             <div className='flex justify-center items-center'>
                 <LeadsCard />
-                <LeadsCard />
-                <LeadsCard />
+          
                 </div>
         </div>
 
