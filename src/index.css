@@ -82,3 +82,11 @@
 .team_main_bop_wrapper:hover .social-icons {
   opacity: 1;
 }
+
+.contact-bg{
+
+  background-image: url('./Pages/Contact/contactform_bg.svg');
+   background-attachment: fixed; 
+  background-repeat: no-repeat;
+  background-size: cover;
+}
