@@ -1,3 +1,4 @@
+import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import Navbar2 from './Components/Navbar2/navbar2';
@@ -10,7 +11,20 @@ import Blogs from './Pages/Blog/blog';
 import Contact from './Pages/Contact/contact';
 import Footer from './Components/Footer/footer';
 import Navbar1 from './Components/Navbar1/Navbar1';
+
 const App = () => {
+  // useEffect(() => {
+  //   const handleContextMenu = (event) => {
+  //     event.preventDefault();
+  //   };
+
+  //   document.addEventListener('contextmenu', handleContextMenu);
+
+  //   return () => {
+  //     document.removeEventListener('contextmenu', handleContextMenu);
+  //   };
+  // }, []);
+
   return (
     <Router>
       <Navbar1 />
@@ -25,7 +39,6 @@ const App = () => {
         <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />
-
     </Router>
   );
 };
