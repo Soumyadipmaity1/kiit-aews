@@ -96,3 +96,37 @@ box-shadow: 0px 0px 4px 0px #ffffffdd;
   transition: box-shadow 0.3s ease;
 backdrop-filter: blur(4px);
 }
+
+
+
+.members .image:hover .overlay {
+  opacity: 0.5;
+}
+
+.members .image:hover .social-icons {
+  opacity: 1;
+}
+
+.members .image:hover .text-div {
+  opacity: 1;
+}
+
+.group:hover .overlay {
+  opacity: 0.5;
+}
+
+.group:hover .social-icons {
+  opacity: 1;
+}
+
+.group:hover .text-div {
+  opacity: 1;
+}
+.members:hover {
+  box-shadow: 1px 1px 15px 1px #08ee4ddd;
+}
+.members{
+  
+  box-shadow: 0px 0px 7px 0px #000000dd;
+
+}

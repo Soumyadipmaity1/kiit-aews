@@ -1,0 +1,92 @@
+
+
+import React from 'react';
+import { FaTwitter, FaLinkedin, FaFacebook } from 'react-icons/fa';
+import Image from './photo_2024-05-14_17-42-08.jpg';
+
+const memberData = [
+    {
+     
+        title: "Soumyadip Maity",
+        imgSrc: Image,
+        social: {
+            twitter: "https://twitter.com/soumyadip",
+            linkedin: "https://linkedin.com/in/soumyadip",
+            facebook: "https://facebook.com/soumyadip"
+        }
+    },
+    {
+       
+        title: "Soumyadip Maity",
+        imgSrc: Image,
+        social: {
+            twitter: "https://twitter.com/soumyadip",
+            linkedin: "https://linkedin.com/in/soumyadip",
+            facebook: "https://facebook.com/soumyadip"
+        }
+    },
+    {
+        title: "Soumyadip Maity",
+        imgSrc: Image,
+        social: {
+            twitter: "https://twitter.com/soumyadip",
+            linkedin: "https://linkedin.com/in/soumyadip",
+            facebook: "https://facebook.com/soumyadip"
+        }
+    },
+    {
+       
+        title: "Soumyadip Maity",
+        imgSrc: Image,
+        social: {
+            twitter: "https://twitter.com/soumyadip",
+            linkedin: "https://linkedin.com/in/soumyadip",
+            facebook: "https://facebook.com/soumyadip"
+        }
+    },
+];
+
+const MemberPost = ({ title, imgSrc, social }) => (
+  <div className="w-72 m-5 h-auto members  bg-slate-white shadow-md rounded-md overflow-hidden group">
+    <div className="relative rounded-t-md image overflow-hidden">
+      <img
+        className="w-full rounded-t-md h-76 transition-transform duration-300 transform group-hover:scale-110"
+        src={imgSrc}
+        alt="leadImage"
+      />
+      <div className="overlay absolute inset-0 bg-black opacity-0 transition-opacity duration-300 group-hover:opacity-50"></div>
+      <div className="social-icons absolute inset-0 flex justify-center items-center space-x-4 transition-opacity duration-300 opacity-0 group-hover:opacity-100">
+        <a href={social.twitter} className="text-white hover:text-green-500">
+          <FaTwitter size={25} />
+        </a>
+        <a href={social.linkedin} className="text-white hover:text-green-500">
+          <FaLinkedin size={25} />
+        </a>
+        <a href={social.facebook} className="text-white hover:text-green-500">
+          <FaFacebook size={25} />
+        </a>
+      </div>
+      <div className="absolute inset-0 flex mt-[252px] py-1 bg-green-500 justify-center transition-opacity duration-300 opacity-0 group-hover:opacity-100">
+        <h3 className="text-center font-bold text-[17px]  text-white">{title}</h3>
+      </div>
+    </div>
+  </div>
+);
+
+
+const MemberCards = () => (
+    <div className="flex flex-wrap">
+        {memberData.map((post, index) => (
+            <MemberPost
+                key={index}
+                position={post.position}
+                Words={post.Words}
+                title={post.title}
+                imgSrc={post.imgSrc}
+                social={post.social}
+            />
+        ))}
+    </div>
+);
+
+export default MemberCards;
