@@ -90,3 +90,9 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.contact-symbol{
+box-shadow: 0px 0px 4px 0px #ffffffdd;
+  transition: box-shadow 0.3s ease;
+backdrop-filter: blur(4px);
+}
