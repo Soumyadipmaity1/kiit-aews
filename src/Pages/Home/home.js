@@ -33,10 +33,7 @@ export default function Home() {
 
           </div>
             <PhotoPopUpImages />
-            <div className='flex justify-center items-center'>
-                <LeadsCard />
           
-                </div>
         </div>
 
 

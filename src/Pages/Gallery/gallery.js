@@ -1,9 +1,9 @@
- 
+ import PhotoPopUpImages from "../../Components/PhotoPopup/Photopopup";
 
  export default function Gallery() {
     return (
         <div>
-            <h1>Gallery</h1>
+            <PhotoPopUpImages />
         </div>
     );
 }
