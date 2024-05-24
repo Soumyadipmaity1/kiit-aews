@@ -24,18 +24,15 @@
 
 /* Track */
 ::-webkit-scrollbar-track {
-    background: var(--google-white);
+  background: rgba(255, 255, 255, 0.476);
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: var(--google-green);
+  background: var(--google-green);
 }
 
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-    background: var(--google-blue);
-}
+
 
 :root {
   --google-green: #0F9D58;
