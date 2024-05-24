@@ -65,7 +65,7 @@ const Footer = () => {
         <div className="w-full mx-auto py-5 pb-8">
           <hr className="my-3 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-5" />
           <span className="text-sm text-gray-500 flex justify-center text-center dark:text-gray-400">
-            © 2024 <a href="index.html" className="hover:underline">KIIT Animal & Environment Welfare Society™</a>. All Rights Reserved.
+            © 2024 KIIT Animal & Environment Welfare Society™. All Rights Reserved.
           </span>
         </div>
       </footer>
