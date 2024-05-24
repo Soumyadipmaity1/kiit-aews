@@ -1,5 +1,4 @@
 import HomeStart from "../../Components/HomeStart/HomeStart";
-import EnvironmentalSuggestion from "../../Components/SuggestionForGoodEnvironment/Suggestion";
 import GuildingPillars from '../../Components/GuidingPillars/GuidingPillars';
 import WhyChoose from '../../Components/WhyChoose/WhyChoose';
 import TestimonialSlider from '../../Components/TestimonialSlider/TestimonialSlider';
@@ -7,7 +6,7 @@ import PhotoPopUpImages from '../../Components/PhotoPopup/Photopopup';
 import BlogsForHome from '../../Components/BlogsForHomePage/BlogsHomePage';
 import AnalysisCount from "../../Components/AnalysisCount/AnalysisCount";
 import LeadsCard from "../../Components/Leads/LeadsCard";
-
+import FAQ from "../../Components/SuggestionForGoodEnvironment/faq";
 
 
 export default function Home() {
@@ -24,7 +23,7 @@ export default function Home() {
                 <h1 className='text-4xl font-bold text-white mx-auto text-center'>Why Choose Us?</h1>
             <WhyChoose />
             </div>
-            <EnvironmentalSuggestion />
+            <FAQ />
             <TestimonialSlider />
             <div className='p-20 mx-auto'>
                 <h1 className='text-4xl text-center   mx-auto font-semibold   pb-6'>Latest Blogs Post</h1>
