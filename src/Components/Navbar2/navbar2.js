@@ -52,8 +52,8 @@ const Navbar2 = () => {
           <div key={index} className="px-2 mx-2">
             <NavLink
               to={link.to}
-              className={`text-black p-2 md:text-md xl:text-lg font-bold ${
-                location.pathname === link.to ? ' border-b-4 border-orange-500' : ''
+              className={`text-black p-2 md:text-md xl:text-lg font-bold  ${
+                location.pathname === link.to ? ' border-b-4 border-orange-500' : 'hover:border-b-4 border-animation   hover:border-transparent'
               }`}
             >
               {link.text}
