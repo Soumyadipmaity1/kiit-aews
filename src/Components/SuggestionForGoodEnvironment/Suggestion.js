@@ -1,141 +1,28 @@
-import React, { useState } from 'react';
-import Accordion from '@mui/material/Accordion';
-import AccordionSummary from '@mui/material/AccordionSummary';
-import AccordionDetails from '@mui/material/AccordionDetails';
-import Typography from '@mui/material/Typography';
-import KeyboardDoubleArrowDownIcon from '@mui/icons-material/KeyboardDoubleArrowDown';
 
-export default function EnvironmentalSuggestion() {
-    const [isAccordionExpanded1, setIsAccordionExpanded1] = useState(false);
-    const [isAccordionExpanded2, setIsAccordionExpanded2] = useState(false);
-    const [isAccordionExpanded3, setIsAccordionExpanded3] = useState(false);
-    const [isAccordionExpanded4, setIsAccordionExpanded4] = useState(false);
-    const [isAccordionExpanded5, setIsAccordionExpanded5] = useState(false);
+import AccordionStyle from "./AccordionStyle";
 
+export default function FAQ() {
+	return (
+		<div className="my-10 pt-16  sm:px-5 lg:px-16 2lg:px-20 xl:px-36 bg-white">
+			<h2 className='text-center text-3xl sm:text-[34px] lg:text-[36px] text-[#125872] font-bold sm:mb-8 px-5 '>
+				Frequently Asked Questions
+			</h2>
+			<div className="flex-col items-center sm:grid lg:grid-cols-2 sm:flex-1 sm:justify-center flex  justify-center px-5 lg:p-2 ">
+				<div className="my-5 flex-1  mx-auto m-2 2lg:w-[500px]" >
+					<div className='relative pt-2'>
+						
+                <img  src="https://images.unsplash.com/photo-1611003229186-80e40cd54966?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGJhYnklMjBhbmltYWxzfGVufDB8fDB8fHww" 
+							alt='image'
+							className='w-full h-auto rounded-lg shadow-lg'
+						/>
+					
+					</div>
+				</div>
+				<div className=" px-2 mx-auto text-  sm:w-[550px] lg:w-[440px] xl:w-[580px] 2lg:w-auto py-2 sm:pt-8 lg:pt-5 2lg:pt-5 " >
+					<AccordionStyle />
+				</div>
+			</div>
+		</div>
+	);
 
-
-    const handleAccordionChange1 = (event, isExpanded) => {
-        setIsAccordionExpanded1(isExpanded);
-    };
-
-    const handleAccordionChange2 = (event, isExpanded) => {
-        setIsAccordionExpanded2(isExpanded);
-    };
-
-    const handleAccordionChange3 = (event, isExpanded) => {
-        setIsAccordionExpanded3(isExpanded);
-    };
-    const handleAccordionChange4 = (event, isExpanded) => {
-        setIsAccordionExpanded4(isExpanded);
-    };
-    const handleAccordionChange5 = (event, isExpanded) => {
-        setIsAccordionExpanded5(isExpanded);
-    };
-
-    return (
-        <div>
-           <Accordion onChange={handleAccordionChange1}  className='my-3  roundd p-2 rounded-full'>
-                <AccordionSummary
-                    expandIcon={<KeyboardDoubleArrowDownIcon style={{  color: isAccordionExpanded1 ? 'White' : 'initial', fontWeight: 'bold' ,fontSize: '1.8rem'}} />}
-                    aria-controls="panel1-content"
-                    id="panel1-header"
-                    style={{
-                        backgroundColor: isAccordionExpanded1 ? '#129635' : 'initial',
-                        color: isAccordionExpanded1 ? 'White' : 'initial',
-
-                    }}                     >
-                    <Typography variant='h5' style={{ fontWeight: 'bold', fontSize: '1.2rem' }} >   Question 1</Typography>
-                </AccordionSummary>
-
-                <AccordionDetails>
-                    <Typography>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                        malesuada lacus ex, sit amet blandit leo lobortis eget.
-                    </Typography>
-                </AccordionDetails>
-            </Accordion>
-            <Accordion onChange={handleAccordionChange2} className='my-3  roundd p-2 rounded-full'>
-                <AccordionSummary
-                    expandIcon={<KeyboardDoubleArrowDownIcon style={{  color: isAccordionExpanded2 ? 'White' : 'initial', fontWeight: 'bold' ,fontSize: '1.8rem'}} />}
-                    aria-controls="panel1-content"
-                    id="panel1-header"
-                    style={{
-                        backgroundColor: isAccordionExpanded2 ? '#129635' : 'initial',
-                        color: isAccordionExpanded2 ? 'White' : 'initial',
-                        
-
-                    }}                     >
-                    <Typography variant='h5' style={{ fontWeight: 'bold', fontSize: '1.2rem' }} >Question 2</Typography>
-                </AccordionSummary>
-
-                <AccordionDetails>
-                    <Typography>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                        malesuada lacus ex, sit amet blandit leo lobortis eget.
-                    </Typography>
-                </AccordionDetails>
-            </Accordion>
-
-            <Accordion onChange={handleAccordionChange3} className='my-3  roundd p-2 rounded-full'>
-                <AccordionSummary
-                    expandIcon={<KeyboardDoubleArrowDownIcon style={{  color: isAccordionExpanded3 ? 'White' : 'initial', fontWeight: 'bold' ,fontSize: '1.8rem'}} />}
-                    aria-controls="panel1-content"
-                    id="panel1-header"
-                    style={{
-                        backgroundColor: isAccordionExpanded3 ? '#129635' : 'initial',
-                        color: isAccordionExpanded3 ? 'White' : 'initial',
-
-                    }}                     >
-                    <Typography variant='h5' style={{ fontWeight: 'bold', fontSize: '1.2rem' }} >Question 3</Typography>
-                </AccordionSummary>
-
-                <AccordionDetails>
-                    <Typography>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                        malesuada lacus ex, sit amet blandit leo lobortis eget.
-                    </Typography>
-                </AccordionDetails>
-            </Accordion>
-            <Accordion onChange={handleAccordionChange4} className='my-3  roundd p-2 rounded-full'>
-                <AccordionSummary
-                    expandIcon={<KeyboardDoubleArrowDownIcon style={{  color: isAccordionExpanded4 ? 'White' : 'initial', fontWeight: 'bold' ,fontSize: '1.8rem'}} />}
-                    aria-controls="panel1-content"
-                    id="panel1-header"
-                    style={{
-                        backgroundColor: isAccordionExpanded4 ? '#129635' : 'initial',
-                        color: isAccordionExpanded4 ? 'White' : 'initial',
-
-                    }}                     >
-                    <Typography variant='h5' style={{ fontWeight: 'bold', fontSize: '1.2rem' }} >Question 4</Typography>
-                </AccordionSummary>
-
-                <AccordionDetails>
-                    <Typography>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                        malesuada lacus ex, sit amet blandit leo lobortis eget.
-                    </Typography>
-                </AccordionDetails>
-            </Accordion>
-            <Accordion onChange={handleAccordionChange5} className='my-3  roundd p-2 rounded-full'>
-                <AccordionSummary
-                    expandIcon={<KeyboardDoubleArrowDownIcon style={{  color: isAccordionExpanded5 ? 'White' : 'initial', fontWeight: 'bold' ,fontSize: '1.8rem'}} />}
-                    aria-controls="panel1-content"
-                    id="panel1-header"
-                    style={{
-                        backgroundColor: isAccordionExpanded5 ? '#129635' : 'initial',
-                        color: isAccordionExpanded5 ? 'White' : 'initial',
-
-                    }}                     >
-                    <Typography variant='h5' style={{ fontWeight: 'bold', fontSize: '1.2rem' }} >Question 5</Typography>
-                </AccordionSummary>
-
-                <AccordionDetails>
-                    <Typography>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                        malesuada lacus ex, sit amet blandit leo lobortis eget.
-                    </Typography>
-                </AccordionDetails>
-            </Accordion>
-        </div>
-    );
 }
