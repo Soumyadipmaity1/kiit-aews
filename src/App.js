@@ -10,25 +10,26 @@ import Blogs from './Pages/Blog/blog';
 import Contact from './Pages/Contact/contact';
 import Footer from './Components/Footer/footer';
 import Navbar1 from './Components/Navbar1/Navbar1';
-
+import NavbarForMobile from './Components/Navbar2/navbar2ForMobile';
 const App = () => {
-  useEffect(() => {
-    const handleContextMenu = (event) => {
-      event.preventDefault();
-    };
+  // useEffect(() => {
+  //   const handleContextMenu = (event) => {
+  //     event.preventDefault();
+  //   };
 
-    document.addEventListener('contextmenu', handleContextMenu);
+  //   document.addEventListener('contextmenu', handleContextMenu);
 
-    return () => {
-      document.removeEventListener('contextmenu', handleContextMenu);
-    };
-  }, []);
+  //   return () => {
+  //     document.removeEventListener('contextmenu', handleContextMenu);
+  //   };
+  // }, []);
 
   return (
-    <Router>
-      <Navbar1 />
-      <Navbar2 />
-      <Routes>
+     <Router>
+    {/* //   <Navbar1 /> */}
+{/* <div className='hidden lg:block'><Navbar2 /></div> */}
+<div className='' ><NavbarForMobile /></div>
+      {/* <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/members" element={<Members />} />
@@ -37,7 +38,7 @@ const App = () => {
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
-      <Footer />
+      <Footer /> */}
     </Router>
   );
 };
