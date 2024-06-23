@@ -8,13 +8,13 @@ const TestimonialSlider = () => {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 2000, 
+    speed: 3000, 
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true, 
-    autoplaySpeed: 3000, 
+    autoplaySpeed: 4000, 
     arrows:false,
-    pauseOnHover: false,
+    pauseOnHover: true,
   };
 
   return (
@@ -34,15 +34,15 @@ const TestimonialSlider = () => {
         <div >
         <div className='flex justify-center'>
         <TestimonialCard cardType="card3" />
-        <TestimonialCard cardType="card1" />
+        <TestimonialCard cardType="card4" />
         </div>
         </div>
         
         <div >
 
             <div className='flex justify-center'>
-        <TestimonialCard cardType="card2" />
-        <TestimonialCard cardType="card3" />
+        <TestimonialCard cardType="card5" />
+        <TestimonialCard cardType="card6" />
         </div>
 
         </div>
