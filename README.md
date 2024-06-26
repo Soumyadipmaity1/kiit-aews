@@ -1,70 +1,118 @@
-# Getting Started with Create React App
+# KIIT Animal and Welfare Society Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+Welcome to the official repository for the KIIT Animal and Welfare Society website. Our society focuses on environmental and animal welfare, showcasing our events and works, and making a positive impact in the community. This website serves as a platform to reach out to people, enhance the importance of environmental and animal welfare, and provide support to injured animals.
 
-In the project directory, you can run:
+## Objectives
 
-### `npm start`
+- **Showcase Events and Works:**
+  - Highlight past and upcoming events organized by the society.
+  - Display the projects and initiatives undertaken for animal and environmental welfare.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Positive Impact:**
+  - Promote awareness and importance of environmental conservation and animal welfare in the society.
+  - Share success stories and the impact of our work on the community.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Support Injured Animals:**
+  - Provide information on how to support and help injured animals.
+  - Share resources and contact information for immediate assistance.
 
-### `npm test`
+## Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Home Page**
+- **About Us**
+- **Events**
+- **Gallery**
+- **Blogs**
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Technologies Used
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Frontend:**
+  - HTML, CSS, JavaScript
+  - React.js and Tailwind CSS for dynamic content and interactive UI
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Backend:**
+  - Not use till now
+  
+# Repository Contribution Rules
 
-### `npm run eject`
+## Overview
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+This repository is protected to ensure the quality and integrity of the codebase. The following rules must be followed to contribute to this repository. No one can commit or merge any changes without explicit permission from the repository owner.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Branch Protection Rules
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. **Protected Branches:**
+   - The `main` branch is protected.
+   - Direct commits to the `main` branch are prohibited.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+2. **Pull Requests:**
+   - All changes must be submitted via pull requests (PRs).
+   - PRs must be reviewed and approved before merging.
+   - At least one approving review is required before a PR can be merged.
 
-## Learn More
+3. **Required Status Checks:**
+   - All status checks must pass before a PR can be merged.
+   - Ensure your branch is up-to-date with the `main` branch before merging.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+4. **Code Owners:**
+   - Certain parts of the codebase may have designated code owners.
+   - Approval from code owners is mandatory for changes in their respective areas.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Contribution Process
 
-### Code Splitting
+1. **Fork the Repository:**
+   - Create a fork of the repository to your own GitHub account.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+2. **Create a Feature Branch:**
+   - Clone the forked repository to your local machine.
+   - Create a new feature branch for your changes.
 
-### Analyzing the Bundle Size
+3. **Make Changes:**
+   - Implement your changes in the feature branch.
+   - Ensure your changes are thoroughly tested.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+4. **Submit a Pull Request:**
+   - Push your feature branch to your forked repository.
+   - Open a pull request from your feature branch to the `main` branch of this repository.
+   - Clearly describe the changes and why they are necessary.
 
-### Making a Progressive Web App
+5. **Review and Approval:**
+   - Wait for the review from the repository owner or designated reviewers.
+   - Make any requested changes.
+   - Once approved, the repository owner will merge the PR.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Permissions
 
-### Advanced Configuration
+- **Commit Access:**
+  - Only the repository owner has direct commit access to the `main` branch.
+  - All other contributors must use pull requests for any changes.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- **Merging Pull Requests:**
+  - Only the repository owner or designated maintainers can merge pull requests.
 
-### Deployment
+## Enforcing Rules
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+To enforce these rules, branch protection settings are configured as follows:
 
-### `npm run build` fails to minify
+1. **Require pull request reviews before merging:**
+   - All PRs must be reviewed and approved before merging.
+   - The required number of approvals is set to 1.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+2. **Require status checks to pass before merging:**
+   - All status checks must pass before merging.
+
+3. **Restrict who can push to matching branches:**
+   - Only the repository owner can push directly to protected branches.
+
+4. **Include administrators:**
+   - These rules also apply to administrators.
+
+By following these rules, we can maintain a high-quality codebase and ensure that all changes are properly reviewed and tested. Thank you for your cooperation!
+
+## Contact
+
+- For any questions or to request permissions, please contact [22053029@kiit.ac.in](mailto:22053029@kiit.ac.in).
+- This `README.md` file provides a comprehensive overview of the project, including objectives, features, installation instructions, and contribution guidelines.
