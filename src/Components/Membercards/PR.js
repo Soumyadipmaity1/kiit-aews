@@ -1,7 +1,7 @@
 
 
 import React from 'react';
-import { FaTwitter, FaLinkedin, FaFacebook } from 'react-icons/fa';
+import { FaTwitter, FaLinkedin, FaInstagram } from 'react-icons/fa';
 import Image from './photo_2024-05-14_17-42-08.jpg';
 
 const memberData = [
@@ -10,9 +10,9 @@ const memberData = [
         title: "Soumyadip Maity",
         imgSrc: Image,
         social: {
-            twitter: "https://twitter.com/soumyadip",
+            Instagram: "https://instagram.com/soumyadip",
             linkedin: "https://linkedin.com/in/soumyadip",
-            facebook: "https://facebook.com/soumyadip"
+            Twitter: "https://twiter.com/soumyadip"
         }
     },
     {
@@ -20,18 +20,18 @@ const memberData = [
         title: "Soumyadip Maity",
         imgSrc: Image,
         social: {
-            twitter: "https://twitter.com/soumyadip",
+            Instagram: "https://instagram.com/soumyadip",
             linkedin: "https://linkedin.com/in/soumyadip",
-            facebook: "https://facebook.com/soumyadip"
+            Twitter: "https://twiter.com/soumyadip"
         }
     },
     {
         title: "Soumyadip Maity",
         imgSrc: Image,
         social: {
-            twitter: "https://twitter.com/soumyadip",
+            Instagram: "https://instagram.com/soumyadip",
             linkedin: "https://linkedin.com/in/soumyadip",
-            facebook: "https://facebook.com/soumyadip"
+            Twitter: "https://twiter.com/soumyadip"
         }
     },
     {
@@ -39,9 +39,9 @@ const memberData = [
         title: "Soumyadip Maity",
         imgSrc: Image,
         social: {
-            twitter: "https://twitter.com/soumyadip",
+            Instagram: "https://instagram.com/soumyadip",
             linkedin: "https://linkedin.com/in/soumyadip",
-            facebook: "https://facebook.com/soumyadip"
+            Twitter: "https://twiter.com/soumyadip"
         }
     },
 ];
@@ -56,14 +56,14 @@ const MemberPost = ({ title, imgSrc, social }) => (
       />
       <div className="overlay absolute inset-0 bg-black opacity-0 transition-opacity duration-300 group-hover:opacity-50"></div>
       <div className="social-icons absolute inset-0 flex justify-center items-center space-x-4 transition-opacity duration-300 opacity-0 group-hover:opacity-100">
-        <a href={social.twitter} className="text-white hover:text-green-500">
-          <FaTwitter size={25} />
+        <a href={social.instagram} className="text-white hover:text-green-500">
+          <FaInstagram size={25} />
         </a>
         <a href={social.linkedin} className="text-white hover:text-green-500">
           <FaLinkedin size={25} />
         </a>
-        <a href={social.facebook} className="text-white hover:text-green-500">
-          <FaFacebook size={25} />
+        <a href={social.twitter} className="text-white hover:text-green-500">
+          <FaTwitter size={25} />
         </a>
       </div>
       <div className="absolute inset-0 flex mt-[252px] py-1 bg-green-500 justify-center transition-opacity duration-300 opacity-0 group-hover:opacity-100">
