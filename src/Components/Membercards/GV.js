@@ -10,39 +10,39 @@ const memberData = [
         title: "Soumyadip Maity",
         imgSrc: Image,
         social: {
-            Instagram: "https://instagram.com/soumyadip",
-            linkedin: "https://linkedin.com/in/soumyadip",
-            Twitter: "https://twiter.com/soumyadip"
-        }
+          instagram: "https://instagram.com/soumyadip",
+          linkedin: "https://linkedin.com/in/soumyadip",
+          twitter: "https://twiter.com/soumyadip"
+      }
     },
     {
        
         title: "Soumyadip Maity",
         imgSrc: Image,
         social: {
-            Instagram: "https://instagram.com/soumyadip",
-            linkedin: "https://linkedin.com/in/soumyadip",
-            Twitter: "https://twiter.com/soumyadip"
-        }
+          instagram: "https://instagram.com/soumyadip",
+          linkedin: "https://linkedin.com/in/soumyadip",
+          twitter: "https://twiter.com/soumyadip"
+      }
     },
     {
         title: "Soumyadip Maity",
         imgSrc: Image,
         social: {
-            Instagram: "https://instagram.com/soumyadip",
-            linkedin: "https://linkedin.com/in/soumyadip",
-            Twitter: "https://twiter.com/soumyadip"
-        }
+          instagram: "https://instagram.com/soumyadip",
+          linkedin: "https://linkedin.com/in/soumyadip",
+          twitter: "https://twiter.com/soumyadip"
+      }
     },
     {
        
         title: "Soumyadip Maity",
         imgSrc: Image,
         social: {
-            Instagram: "https://instagram.com/soumyadip",
-            linkedin: "https://linkedin.com/in/soumyadip",
-            Twitter: "https://twiter.com/soumyadip"
-        }
+          instagram: "https://instagram.com/soumyadip",
+          linkedin: "https://linkedin.com/in/soumyadip",
+          twitter: "https://twiter.com/soumyadip"
+      }
     },
 ];
 
