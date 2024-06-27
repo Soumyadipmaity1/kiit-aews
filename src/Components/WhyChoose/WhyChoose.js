@@ -1,69 +1,56 @@
-const ChooseUsimage = 'https://images.pexels.com/photos/47547/squirrel-animal-cute-rodents-47547.jpeg?cs=srgb&dl=pexels-pixabay-47547.jpg&fm=jpg'
+import React from 'react';
+import { FaHandshake, FaArrowRight } from "react-icons/fa6";
+import { BsGraphUpArrow } from "react-icons/bs";
+import { HiMiniUserGroup } from "react-icons/hi2";
+import { GrAchievement } from "react-icons/gr";
 
-export default function WhyChoose() {
-    return (
-        <section className="flex mt-20">
-            
-            <div className="w-my-auto text-justify ">
+const WhyChooseUs = () => {
+  const cards = [
+    {
+      icon: <GrAchievement className="text-5xl  text-green-600 mt-2 mx-auto" />,
+      title: 'A Voice for Noble Cause',
+      description: ' Join KIIT AEWS and become a powerful voice for environment and the animals. Contribute fresh ideas, actively participate in impactful projects, seminars, workshops, campaigns, etc and be part of shaping a more sustainable tomorrow.',
+      link: '/events', 
+    },
+    {
+      icon: <FaHandshake className="text-5xl text-green-600 mt-2  mx-auto" />,
+      title: 'Strengthen your Networks ',
+      description: 'Connect with animal welfare and environmental NGOs and professionals. Gain experience in project management, event planning, and fundraising to bolster your resume and demonstrate dedication to conservation and welfare causes.',
+      link: '/members', 
+    },
+    {
+      icon: <BsGraphUpArrow className="text-5xl  text-green-600 mt-2 mx-auto" />,
+      title: 'Skill Development',
+      description: 'A society to develop your skills such as leadership, communication,teamwork, problem solving etc. All ideas are welcome in both technical and non- technical departments. We offer collaborative projects for better skill development.',
+      link: '/blogs', 
+    },
+ 
+    {
+        icon: <HiMiniUserGroup className="text-5xl  text-green-600 mt-2 mx-auto" />,
+        title: 'Vibrant community',
+        description: 'Experience a vibrant community at KIIT AEWS with fun activities, games, social gatherings, and bonding experiences. We offer engaging events and a supportive atmosphere that combines making a difference with enjoyable moments.',
+        link: '/about', 
+      },
+  ];
 
-                <div className="flex mb-5 ">
-                    <div className="flex w-1/2  m-4 mx-4">
-                        <div className="bg-green-500 rounded-full text-center  item-center flex m-5 h-[68px] p-3 text-white ">
-                            <i class='bx bxs-first-aid text-[45px]   '></i>
-                        </div>
-                        <div>
-                            <h3 className="py-1 text-[22px] text-[#00ff6a]  font-bold">Platform for a noble cause</h3>
-                            <p className="text-gray-100">
-                            Join KIIT AEWS and become a powerful voice for environment and the animals. Contribute fresh ideas, actively participate in impactful projects, seminars, workshops, campaigns, etc and be part of shaping a more sustainable tomorrow.
+  return (
+    <div className="flex  justify-center space-x-4 p-6  ">
+      {cards.map((card, index) => (
+        <div key={index} className="bg-green-200 hover:bg-[#a4f5ce] w-96 p-6 rounded-lg text-center  hover:scale-105 transform transition-transform duration-300">
+          <div className="mb-4">{card.icon}</div>
+          <h2 className="text-xl font-bold text-gray-800 mb-2">{card.title}</h2>
+          <p className="mb-4 text-gray-700 text-justify text-sm font-semibold">{card.description}</p>
+          <a 
+            href={card.link} 
+            className="flex items-center justify-center text-black font-semibold hover:underline hover:text-green-700 transition duration-300"
+          >
+            Learn More <FaArrowRight className="ml-2" />
 
-                            </p>
-                        </div>
-                    </div>
-                    <div className="flex w-1/2 m-4 mx-4">
-                        <div className="bg-green-500 rounded-full text-center  item-center flex m-5 h-[68px] p-3 text-white ">
-                            <i class='bx bxs-first-aid text-[45px]   '></i>
-                        </div>
-                        <div>
-                            <h3 className="py-1 text-[22px] text-[#00ff6a]  font-bold">Fast Delivery</h3>
-                            <p className="text-gray-100">
-                            Enjoy a vibrant community atmosphere with fun activities, games, social gatherings, and bonding experiences with fellow members. KIIT AEWS isn't just about hard work! We offer engaging activities, informative events, and a supportive community that makes a difference while having fun.
+          </a>
+        </div>
+      ))}
+    </div>
+  );
+};
 
-
-                            </p>
-                        </div>
-                    </div>
-
-                </div>
-                <div className="flex mt-5 my-8 ">
-                    <div className="flex w-1/2 m-4 mx-4">
-                        <div className="bg-green-500 rounded-full text-center  item-center flex m-5 h-[68px] p-3 text-white ">
-                            <i class='bx bxs-first-aid text-[45px]   '></i>
-                        </div>
-                        <div>
-                            <h3 className="py-1 text-[22px] text-[#00ff6a]  font-bold">Fast Delivery</h3>
-                            <p className="text-gray-100">
-                            Develop leadership skills and hone valuable skills like communication, teamwork, problem-solving, etc through collaborative projects in a supportive environment. Everyone's ideas are welcome here!. We offer opportunities in both technical and non-technical departments (webdev, graphic design, R&D, video editing, etc). Our highly active community fosters inclusivity, where you can contribute fresh ideas, actively participate in meaningful projects and be part of shaping a more sustainable tomorrow.
-
-                            </p>
-                        </div>
-                    </div>
-                    <div className="flex w-1/2 m-4 mx-4">
-                        <div className="bg-green-500 rounded-full text-center  item-center flex m-5 h-[68px] p-3 text-white ">
-                            <i class='bx bxs-first-aid text-[45px]   '></i>
-                        </div>
-                        <div>
-                            <h3 className="py-1 text-[22px]  text-[#00ff6a] font-bold">Fast Delivery</h3>
-                            <p className="text-gray-100">
-                            Connect with like-minded individuals, professionals and NGOs in the field of animal welfare and environmental conservation. Enhance your resume with practical experience in project management, event planning, fundraising, or other relevant areas. Active participation strengthens your resume and demonstrates your commitment to causes beyond academics.
-                                </p>
-                        </div>
-                    </div>
-
-                </div>
-            </div >
-            {/* <div className=" w-4/12 mt-20">
-                <img className='' src={ChooseUsimage} ></img>
-            </div> */}
-        </section >
-    );
-}
+export default WhyChooseUs;
