@@ -19,8 +19,8 @@ export default function Home() {
                 <GuildingPillars />
             </div>
             <AnalysisCount />
-            <div className='pt-16  bg-[#195d50] px-10 '>
-                <h1 className='text-4xl font-bold text-white mx-auto text-center'>Why Choose Us?</h1>
+            <div className='py-20  bg-[#11463d] px-10  '>
+                <h1 className='text-4xl font-bold text-white mx-auto text-center mb-12'>Why Choose Us?</h1>
             <WhyChoose />
             </div>
             <FAQ />
