@@ -3,8 +3,8 @@ import AccordionStyle from "./AccordionStyle";
 
 export default function FAQ() {
 	return (
-		<div className="my-10 pt-16  sm:px-5 lg:px-16 2lg:px-20 xl:px-36 bg-white">
-			<h2 className='text-center text-3xl sm:text-[34px] lg:text-[36px] text-[#125872] font-bold sm:mb-8 px-5 '>
+		<div className="my-14  sm:px-5 lg:px-16 2lg:px-20 xl:px-36 bg-white">
+			<h2 className='text-center text-3xl sm:text-[34px] lg:text-[36px] text-[#127240] font-bold sm:mb-8 px-5 '>
 				Frequently Asked Questions
 			</h2>
 			<div className="flex-col items-center sm:grid lg:grid-cols-2 sm:flex-1 sm:justify-center flex  justify-center px-5 lg:p-2 ">
