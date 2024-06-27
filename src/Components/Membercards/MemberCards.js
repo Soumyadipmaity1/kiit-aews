@@ -13,7 +13,7 @@ function MemberCards() {
 
     return (
         <div className=" ">
-            <nav className="flex justify-center  sm:p-10 p-4 font-bold  ">
+            <nav className="flex justify-center  sm:pb-10 pb-4 font-bold  ">
             <div className="mr-4 font-bold">
                     <button
                         className={`btn btn-danger p-1 sm:px-5 px-4  team-switch-border  sm:text-xl  font-bold border-2 border-black rounded-3xl ${activeTab === 1
