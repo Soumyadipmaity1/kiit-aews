@@ -12,17 +12,17 @@ import Footer from './Components/Footer/footer';
 import Navbar1 from './Components/Navbar1/Navbar1';
 import NavbarForMobile from './Components/Navbar2/navbar2ForMobile';
 const App = () => {
-  // useEffect(() => {
-  //   const handleContextMenu = (event) => {
-  //     event.preventDefault();
-  //   };
+  useEffect(() => {
+    const handleContextMenu = (event) => {
+      event.preventDefault();
+    };
 
-  //   document.addEventListener('contextmenu', handleContextMenu);
+    document.addEventListener('contextmenu', handleContextMenu);
 
-  //   return () => {
-  //     document.removeEventListener('contextmenu', handleContextMenu);
-  //   };
-  // }, []);
+    return () => {
+      document.removeEventListener('contextmenu', handleContextMenu);
+    };
+  }, []);
 
   return (
      <Router>
