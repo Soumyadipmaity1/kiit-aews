@@ -1,50 +1,50 @@
 import React from 'react';
-import { FaTwitter, FaLinkedin, FaFacebook } from 'react-icons/fa';
+import { FaTwitter, FaLinkedin, FaFacebook, FaInstagram } from 'react-icons/fa';
 import Image from './photo_2024-05-14_17-42-08.jpg';
 
 const memberData = [
     {
         Words: "As a member, I wholeheartedly support our society's mission, advocating for animal welfare and making a meaningful impact in our community.",
-        position: "Web Lead",
+        position: "General Volunteer Lead",
         title: "Soumyadip Maity",
         imgSrc: Image,
         social: {
-            twitter: "https://twitter.com/soumyadip",
+            instagram: "https://instagram.com/soumyadip",
             linkedin: "https://linkedin.com/in/soumyadip",
-            facebook: "https://facebook.com/soumyadip"
+            twitter: "https://twiter.com/soumyadip"
         }
     },
     {
         Words: "As a member, I wholeheartedly support our society's mission, advocating for animal welfare and making a meaningful impact in our community.",
-        position: "Design Lead",
+        position: "Public Relation Lead",
         title: "Soumyadip Maity",
         imgSrc: Image,
         social: {
-            twitter: "https://twitter.com/soumyadip",
+            instagram: "https://instagram.com/soumyadip",
             linkedin: "https://linkedin.com/in/soumyadip",
-            facebook: "https://facebook.com/soumyadip"
+            twitter: "https://twiter.com/soumyadip"
         }
     },
     {
         Words: "As a member, I wholeheartedly support our society's mission, advocating for animal welfare and making a meaningful impact in our community.",
-        position: "Marketing Lead",
+        position: "Research & Development Lead",
         title: "Soumyadip Maity",
         imgSrc: Image,
         social: {
-            twitter: "https://twitter.com/soumyadip",
+            instagram: "https://instagram.com/soumyadip",
             linkedin: "https://linkedin.com/in/soumyadip",
-            facebook: "https://facebook.com/soumyadip"
+            twitter: "https://twiter.com/soumyadip"
         }
     },
     {
         Words: "As a member, I wholeheartedly support our society's mission, advocating for animal welfare and making a meaningful impact in our community.",
-        position: "Development Lead",
+        position: "Social Media Lead",
         title: "Soumyadip Maity",
         imgSrc: Image,
         social: {
-            twitter: "https://twitter.com/soumyadip",
+            instagram: "https://instagram.com/soumyadip",
             linkedin: "https://linkedin.com/in/soumyadip",
-            facebook: "https://facebook.com/soumyadip"
+            twitter: "https://twiter.com/soumyadip"
         }
     },
 ];
@@ -59,14 +59,14 @@ const LeadPost = ({ Words, position, title, imgSrc, social }) => (
             />
             <div className="overlay absolute inset-0 bg-black opacity-0 transition-opacity duration-300"></div>
             <div className="social-icons absolute inset-0 flex justify-center items-center space-x-4 transition-opacity duration-300 opacity-0">
-                <a href={social.twitter} className="  text-white hover:text-green-500">
-                    <FaTwitter size={30} />
+                <a href={social.instagram} className="  text-white hover:text-green-500">
+                    <FaInstagram size={30} />
                 </a>
                 <a href={social.linkedin} className="  text-white hover:text-green-500">
                     <FaLinkedin size={30} />
                 </a>
-                <a href={social.facebook} className="  text-white hover:text-green-500">
-                    <FaFacebook size={30} />
+                <a href={social.twitter} className="  text-white hover:text-green-500">
+                    <FaTwitter size={30} />
                 </a>
             </div>
         </div>
