@@ -67,7 +67,7 @@ export default function AccordionStyle() {
             aria-controls={`panel${question.id}-content`}
             id={`panel${question.id}-header`}
             style={{
-              backgroundColor: expanded === question.id ? "#F97316" : "#67f7b9",
+              backgroundColor: expanded === question.id ? "#11463d" : "#2FCE84",
               color: expanded === question.id ? "white" : "#000",
             }}
           >
