@@ -15,39 +15,11 @@ const memberData = [
           twitter: "https://twiter.com/soumyadip"
       }
     },
-    {
-       
-        title: "Soumyadip Maity",
-        imgSrc: Image,
-        social: {
-          instagram: "https://instagram.com/soumyadip",
-          linkedin: "https://linkedin.com/in/soumyadip",
-          twitter: "https://twiter.com/soumyadip"
-      }
-    },
-    {
-        title: "Soumyadip Maity",
-        imgSrc: Image,
-        social: {
-          instagram: "https://instagram.com/soumyadip",
-          linkedin: "https://linkedin.com/in/soumyadip",
-          twitter: "https://twiter.com/soumyadip"
-      }
-    },
-    {
-       
-        title: "Soumyadip Maity",
-        imgSrc: Image,
-        social: {
-          instagram: "https://instagram.com/soumyadip",
-          linkedin: "https://linkedin.com/in/soumyadip",
-          twitter: "https://twiter.com/soumyadip"
-      }
-    },
+
 ];
 
 const MemberPost = ({ title, imgSrc, social }) => (
-  <div className="w-72 m-5 h-auto members  bg-slate-white shadow-md rounded-md overflow-hidden group">
+  <div className="w-60 m-3  h-auto members  bg-slate-white shadow-md rounded-md overflow-hidden group">
     <div className="relative rounded-t-md image overflow-hidden">
       <img
         className="w-full rounded-t-md h-76 transition-transform duration-300 transform group-hover:scale-110"
@@ -66,8 +38,8 @@ const MemberPost = ({ title, imgSrc, social }) => (
           <FaTwitter size={25} />
         </a>
       </div>
-      <div className="absolute inset-0 flex mt-[252px] py-1 bg-green-500 justify-center transition-opacity duration-300 opacity-0 group-hover:opacity-100">
-        <h3 className="text-center font-bold text-[17px]  text-white">{title}</h3>
+      <div className="absolute inset-0 flex mt-[205px] py-1 bg-green-500 justify-center transition-opacity duration-300 opacity-0 group-hover:opacity-100">
+        <h3 className="text-center font-bold text-[15px]  text-white">{title}</h3>
       </div>
     </div>
   </div>
@@ -75,7 +47,7 @@ const MemberPost = ({ title, imgSrc, social }) => (
 
 
 const RD = () => (
-    <div className="flex flex-wrap">
+    <div className="flex justify-center flex-wrap">
         {memberData.map((post, index) => (
             <MemberPost
                 key={index}
