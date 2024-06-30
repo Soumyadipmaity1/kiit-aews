@@ -5,7 +5,7 @@ import Image from './photo_2024-05-14_17-42-08.jpg';
 const memberData = [
     {
         Words: "As a member, I wholeheartedly support our society's mission, advocating for animal welfare and making a meaningful impact in our community.",
-        position: "Assistant Coordinator",
+        roll: "Roll Number here",
         title: "Soumyadip Maity",
         imgSrc: Image,
         social: {
@@ -16,7 +16,7 @@ const memberData = [
     },
     {
         Words: "As a member, I wholeheartedly support our society's mission, advocating for animal welfare and making a meaningful impact in our community.",
-    position: "Assistant Coordinator",
+        roll: "Roll Number here",
         title: "Soumyadip Maity",
         imgSrc: Image,
         social: {
@@ -25,31 +25,10 @@ const memberData = [
             facebook: "https://facebook.com/soumyadip"
         }
     },
-    // {
-    //     Words: "As a member, I wholeheartedly support our society's mission, advocating for animal welfare and making a meaningful impact in our community.",
-    //     position: "Marketing Lead",
-    //     title: "Soumyadip Maity",
-    //     imgSrc: Image,
-    //     social: {
-    //         twitter: "https://twitter.com/soumyadip",
-    //         linkedin: "https://linkedin.com/in/soumyadip",
-    //         facebook: "https://facebook.com/soumyadip"
-    //     }
-    // },
-    // {
-    //     Words: "As a member, I wholeheartedly support our society's mission, advocating for animal welfare and making a meaningful impact in our community.",
-    //     position: "Development Lead",
-    //     title: "Soumyadip Maity",
-    //     imgSrc: Image,
-    //     social: {
-    //         twitter: "https://twitter.com/soumyadip",
-    //         linkedin: "https://linkedin.com/in/soumyadip",
-    //         facebook: "https://facebook.com/soumyadip"
-    //     }
-    // },
+   
 ];
 
-const AsstCoPost = ({ Words, position, title, imgSrc, social }) => (
+const AsstCoPost = ({ Words, roll, title, imgSrc, social }) => (
     <div className="w-80 m-5 h-auto team_main_bop_wrapper bg-slate-white shadow-md hover:text-white hover:bg-[#d26eeb] rounded-md">
         <div className="relative rounded-t-md image overflow-hidden">
             <img
@@ -72,7 +51,7 @@ const AsstCoPost = ({ Words, position, title, imgSrc, social }) => (
         </div>
         <div className="p-5 relative text-div">
             <h3 className="text-center font-bold text-[20px]">{title}</h3>
-            <h4 className="text-center m-2 text-green-900 font-bold">{position}</h4>
+            <h4 className="text-center m-2 text-green-900 font-bold">{roll}</h4>
             <h4 className="text-sm">{Words}</h4>
         </div>
     </div>
@@ -83,7 +62,7 @@ const Asstcoordinator = () => (
         {memberData.map((post, index) => (
             <AsstCoPost
                 key={index}
-                position={post.position}
+                roll={post.roll}
                 Words={post.Words}
                 title={post.title}
                 imgSrc={post.imgSrc}
