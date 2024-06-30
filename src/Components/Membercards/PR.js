@@ -7,8 +7,8 @@ import Image from './photo_2024-05-14_17-42-08.jpg';
 const memberData = [
     {
      
-        title: "Soumyadip Maity",
-        imgSrc: Image,
+        title: "Areen Thakur",
+        imgSrc: Areen Thakur_PR.jpg,
         social: {
           instagram: "https://instagram.com/soumyadip",
           linkedin: "https://linkedin.com/in/soumyadip",
@@ -17,8 +17,8 @@ const memberData = [
     },
     {
        
-        title: "Soumyadip Maity",
-        imgSrc: Image,
+        title: "Guttala Gayatri",
+        imgSrc: Guttala Gayatri_PR.jpg,
         social: {
           instagram: "https://instagram.com/soumyadip",
           linkedin: "https://linkedin.com/in/soumyadip",
@@ -26,8 +26,8 @@ const memberData = [
       }
     },
     {
-        title: "Soumyadip Maity",
-        imgSrc: Image,
+        title: "Himanshu Kumar",
+        imgSrc: Himanshu Kumar.PR.jpg,
         social: {
           instagram: "https://instagram.com/soumyadip",
           linkedin: "https://linkedin.com/in/soumyadip",
