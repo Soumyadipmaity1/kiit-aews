@@ -4,7 +4,6 @@ import Image from './photo_2024-05-14_17-42-08.jpg';
 
 const memberData = [
     {
-        roll: "Roll Number here",
         position: "General Volunteer ",
         title: "Soumyadip Maity",
         imgSrc: Image,
@@ -15,7 +14,7 @@ const memberData = [
         }
     },
     {
-        roll: "Roll Number here",
+
         position: "Public Relation ",
         title: "Soumyadip Maity",
         imgSrc: Image,
@@ -26,7 +25,7 @@ const memberData = [
         }
     },
     {
-        roll: "Roll Number here",
+        
         position: "R&D ",
         title: "Soumyadip Maity",
         imgSrc: Image,
@@ -37,7 +36,7 @@ const memberData = [
         }
     },
     {
-        roll: "Roll Number here",
+
         position: "Social Media ",
         title: "Soumyadip Maity",
         imgSrc: Image,
@@ -49,7 +48,7 @@ const memberData = [
     },
 ];
 
-const LeadPost = ({ roll, position, title, imgSrc, social }) => (
+const LeadPost = ({ position, title, imgSrc, social }) => (
     <div className="w-60 m-5 h-auto team_main_bop_wrapper bg-slate-white shadow-md hover:text-white hover:bg-[#2cc868] rounded-md">
         <div className="relative rounded-t-md image overflow-hidden">
             <img
@@ -72,7 +71,7 @@ const LeadPost = ({ roll, position, title, imgSrc, social }) => (
         </div>
         <div className="p-5 relative text-div">
             <h3 className="text-center font-bold text-[20px]">{title}</h3>
-            <h4 className="text-sm font-bold text-orange-500 text-center m-1">{roll}</h4>
+            {/* <h4 className="text-sm font-bold text-orange-500 text-center m-1">{roll}</h4> */}
 
             <h4 className="text-center m-2 text-green-900 font-bold">{position}</h4>
         </div>
@@ -85,7 +84,6 @@ const Leads = () => (
             <LeadPost
                 key={index}
                 position={post.position}
-                roll={post.roll}
                 title={post.title}
                 imgSrc={post.imgSrc}
                 social={post.social}
