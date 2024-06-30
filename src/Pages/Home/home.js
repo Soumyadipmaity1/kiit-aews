@@ -1,12 +1,11 @@
-import HomeStart from "../../Components/HomeStart/HomeStart";
-import GuildingPillars from '../../Components/GuidingPillars/GuidingPillars';
-import WhyChoose from '../../Components/WhyChoose/WhyChoose';
-import TestimonialSlider from '../../Components/TestimonialSlider/TestimonialSlider';
+import GuildingPillars from '../../Components/HomeComponent/GuidingPillars/GuidingPillars';
+import WhyChoose from '../../Components/HomeComponent/WhyChoose/WhyChoose';
+import TestimonialSlider from '../../Components/HomeComponent/TestimonialSlider/TestimonialSlider';
 import PhotoPopUpImages from '../../Components/PhotoPopup/Photopopup';
-import BlogsForHome from '../../Components/BlogsForHomePage/BlogsHomePage';
-import AnalysisCount from "../../Components/AnalysisCount/AnalysisCount";
-import LeadsCard from "../../Components/Leads/LeadsCard";
-import FAQ from "../../Components/SuggestionForGoodEnvironment/faq";
+import BlogsForHome from '../../Components/HomeComponent/BlogsForHomePage/BlogsHomePage';
+import AnalysisCount from "../../Components/HomeComponent/AnalysisCount/AnalysisCount";
+import FAQ from "../../Components/HomeComponent/SuggestionForGoodEnvironment/Suggestion";
+import HomeStart from '../../Components/HomeComponent/HomeStart/HomeStart';
 
 
 export default function Home() {

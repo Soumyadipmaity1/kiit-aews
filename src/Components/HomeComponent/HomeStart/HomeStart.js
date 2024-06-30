@@ -1,6 +1,5 @@
 
 
-import Button from '@mui/material/Button';
 import bgImage from './BackgroundHome.svg';
  export default function HomeStart(){
     return (

@@ -1,5 +1,5 @@
-import BlogsForHome from "../../Components/BlogsForHomePage/BlogsHomePage";
-import Blogimg from './blogstart4.svg'
+import BlogsForHome from "../../Components/HomeComponent/BlogsForHomePage/BlogsHomePage"
+// import Blogimg from './blogstart4.svg'
 export default function Blog() {
     return (
         <div>

@@ -1,7 +1,7 @@
 
 // import MemberCards from "../../Components/Membercards/MemberCards";
 import MemberStart from "../../Components/MembersComponent/MembersStart";
-import TabSwitchingComponent from "../../Components/TabSwitching/TabSwitching";
+import TabSwitchingComponent from "../../Components/MembersComponent/TabSwitching/TabSwitching";
 
  export default function Member() {
     return (
