@@ -12,7 +12,7 @@ const FooterIcons = () => {
   ];
 
   return (
-    <ul className="ftco-footer-social p-2 py-10  flex space-x-4">
+    <ul className="ftco-footer-social p-2 py-6  flex space-x-4">
       {socials.map((social, index) => (
         <li key={index} className="ftco-animate bg-[#1d1d1e] text-2xl p-3 rounded-full">
           <a
