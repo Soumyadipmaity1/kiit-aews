@@ -52,7 +52,7 @@ const Navbar2 = () => {
         </div>
       </div>
         </div>
-        <button onClick={toggleMobileMenu} className="md:hidden m-2  focus:outline-none">
+        <button onClick={toggleMobileMenu} className="lg:hidden flex m-2  focus:outline-none">
           {isMobileMenuOpen ? (
             <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
@@ -65,7 +65,7 @@ const Navbar2 = () => {
         </button>
       </div>
 
-      <div className={`mt-5 text-center w-full transition-all duration-500 ${isMobileMenuOpen ? 'block' : 'hidden'} md:block`}>
+      <div className={`mt-5 text-center w-full transition-all duration-500 ${isMobileMenuOpen ? 'block' : 'hidden'} lg:block`}>
   {navLinks.map((link, index) => (
     <div key={index} className="mb-3">
       <NavLink
