@@ -39,7 +39,7 @@ const Navbar2 = () => {
   };
 
   return (
-    <div className={`flex flex-col  ${isScrolled ? 'fixed top-0 left-0 right-0 z-50' : 'sticky'} bg-[#ffffff] justify-between py-2  ${isScrolled ? 'shadow-lg' : 'shadow-md'}`}>
+    <div className={`flex flex-col px-4  ${isScrolled ? 'fixed top-0 left-0 right-0 z-50' : 'sticky'} bg-[#ffffff] justify-between py-2  ${isScrolled ? 'shadow-lg' : 'shadow-md'}`}>
       <div className="flex justify-between items-center">
         <div className="flex items-center">
         <div className="flex justify-between lg:hidden">
@@ -52,7 +52,7 @@ const Navbar2 = () => {
         </div>
       </div>
         </div>
-        <button onClick={toggleMobileMenu} className="md:hidden p-2 focus:outline-none">
+        <button onClick={toggleMobileMenu} className="md:hidden m-2  focus:outline-none">
           {isMobileMenuOpen ? (
             <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
@@ -65,21 +65,20 @@ const Navbar2 = () => {
         </button>
       </div>
 
-      <div className={` bg-green-600  mt-5 text-center w-full transition-all duration-500 ${isMobileMenuOpen ? 'block' : 'hidden'} md:block`}>
-        {navLinks.map((link, index) => (
-          <div key={index} className="">
-            <NavLink
-              to={link.to}
-              onClick={() => setIsMobileMenuOpen(false)} 
-              className={`text-black  text-center py-4  font-bold  ${
-                location.pathname === link.to ? '  text-orange-500' : 'hover:border-b-4 border-animation   hover:border-transparent'
-              }`}
-            >
-              {link.text}
-            </NavLink>
-          </div>
-        ))}
-      </div>
+      <div className={`mt-5 text-center w-full transition-all duration-500 ${isMobileMenuOpen ? 'block' : 'hidden'} md:block`}>
+  {navLinks.map((link, index) => (
+    <div key={index} className="mb-3">
+      <NavLink
+        to={link.to}
+        onClick={() => setIsMobileMenuOpen(false)} 
+        className={`block text-black text-xl py-2 border-t-[1px] font-semibold ${location.pathname === link.to ? 'text-orange-600 font-bold' : ''}`}
+      >
+        {link.text}
+      </NavLink>
+    </div>
+  ))}
+</div>
+
     </div>
   );
 };
