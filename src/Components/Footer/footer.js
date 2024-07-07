@@ -5,7 +5,7 @@ import FooterIcons from "../FooterIcons/FooterIcons";
 const Footer = () => {
   return (
     <>
-      <footer className="bg-[#071607]  pt-6 px-10 pl-16">
+      <footer className="bg-[#071607] hidden lg:block  pt-6 px-10 pl-16">
         <div className="grid grid-cols-3 xl:px-10 ">
           <div className="">
             <p className="font-semibold text-neutral-300 pt-5 text-xl">KIIT Animal & Environment 
@@ -70,24 +70,25 @@ const Footer = () => {
         </div>
       </footer>
 
-      {/* <footer className="block bg-[#020319] lg:hidden p-8 pt-10">
+      <footer className="block bg-[#020319] lg:hidden p-8 pt-16">
         <div className=" text-center  ">
-          <img className="mx-auto" src={kaews_logo} alt="" />
-           <h1 className=" font-bold text-yellow-400 p-5 text-xl">"Build Small, Think Big"</h1> 
+          <img className="mx-auto w-44" src={kaews_logo} alt="" />
+           <h1 className=" font-bold text-yellow-400 text-center mt-8 my-5 text-xl">"Let's change ourselves, not them"</h1> 
         </div>
-        <FooterIcons />
-
+<div className="flex justify-center">
+<FooterIcons />
+</div>
         <div>
           <h1>Contact Us</h1>
           <div className=" text-center text-xl font-bold pb-3 text-white ">Contact Us</div>
           <div className="text-center text-gray-400" >
             <p className=" text-sm font">
-              <i className="fa-solid fa-address-book pb-2  "></i> Campus 3, KIIT University, Odisha
+              <i className="fa-solid fa-address-book pb-2  "></i>KSAC, KIIT University, Odisha
             </p>
 
             <p className="  text">
               <i className="fa-solid fa-envelope py-2 pr-1 "></i>
-              <a href="mailto:kiitelectricalsociety@gmail.com" className="hover:text-white">kaews@gmail.com</a>
+              <a href="mailto:kiitelectricalsociety@gmail.com" className="hover:text-white">aewskiit@gmail.com</a>
             </p>
             <p className="  text">
               <i className="fa-solid fa-clock py-2 pr-1"></i> 10am to 8pm
@@ -99,19 +100,33 @@ const Footer = () => {
           <h1 className="text-xl pt-6 p-4 font-bold">Quick Links</h1>
 
           <div className="text-gray-400  text-center">
-            <p className=" cursor-pointer ">
+            <p className=" m-1  cursor-pointer ">
               <a target="_blank" rel="noopener noreferrer" href="https://kiit.ac.in/">KIIT</a>
             </p>
 
-            <p className="cursor-pointer ">
+            <p className=" m-1 cursor-pointer ">
               <a target="_blank" rel="noopener noreferrer" href="https://ksac.kiit.ac.in/">KSAC</a>
             </p>
-            <p className="cursor-pointer ">
+            <p className=" m-1 cursor-pointer ">
               <a target="_blank" rel="noopener noreferrer" href="https://news.kiit.ac.in/kiit-review/">KIIT review</a>
             </p>
 
           </div>
         </div>
+
+        <div className=" text-center flex-col flex justify-center ">
+            <h2 className="text-xl  mt-6 m-2 font-bold text-white">Location</h2>
+            <iframe className="mt-5 mx-auto"
+      src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14962.547358826554!2d85.818928!3d20.356616!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a19093cc3e1974b%3A0x85a345e1f4fcce86!2sKIIT%20Student%20Activity%20Center%20-%20KSAC!5e0!3m2!1sen!2sin!4v1716546829538!5m2!1sen!2sin"
+      width="320"
+      height="220"
+      margin=""
+      style={{ border: 4 }}
+      allowFullScreen="true"
+      loading="lazy"
+      referrerPolicy="no-referrer-when-downgrade"
+    />
+          </div>
 
         <div className="w-full  mx-auto p-2 md:py-6">
           <hr className="my-3 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-5" />
@@ -119,7 +134,7 @@ const Footer = () => {
             ©2024 <Link to="/" className="hover:underline px-1"> KIIT Animal & Environment Welfare Society™</Link>
           </span>
         </div>
-      </footer> */}
+      </footer>
     </>
   );
 };
