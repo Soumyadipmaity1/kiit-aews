@@ -27,8 +27,8 @@ const memberData = [
     {
         
         position: "R&D ",
-        title: "Soumyadip Maity",
-        imgSrc: Image,
+        title: "Dristi Gupta",
+        imgSrc: "./leadimage/DristiGupta_rd.JPEG",
         social: {
             instagram: "https://instagram.com/soumyadip",
             linkedin: "https://linkedin.com/in/soumyadip",
