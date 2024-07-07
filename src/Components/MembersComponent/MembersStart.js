@@ -4,14 +4,11 @@ export default function MemberStart(){
 
 
     return(
-        <div className=" MemberStartBg text">
+        <div className=" MemberStartBg text justify-center flex items-center">
         {" "}
           
-        <h1 className="text-white text-6xl textMember  font-bold pt-[22vh] text font-serif text-center">Meet Our <span className="text-[#4dff0c]">Team</span></h1>
-        <h2 className='text-white text-center textMember t mt-10 font-sans'>
-                <a href="/">Home</a> &gt; <a href="/members">Member</a>
-
-                </h2>
+        <h1 className="text-white text-6xl textMember  font-bold  text font-serif text-center">Meet Our <span className="text-[#4dff0c]">Team</span></h1>
+     
       </div>
     );
 }
