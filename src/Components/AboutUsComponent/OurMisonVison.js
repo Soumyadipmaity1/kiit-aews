@@ -1,15 +1,15 @@
 import React from "react";
-
-const image1 =
-  "https://assets.terrapass.com/wp-content/uploads/2024/02/pollution-4796858_1920.jpg";
+import Image1 from "./mission.png";
+// const image1 =
+//   "https://assets.terrapass.com/wp-content/uploads/2024/02/pollution-4796858_1920.jpg";
 const image2 =
   "https://assets.terrapass.com/wp-content/uploads/2021/07/tree.png";
 const OurMissonVison = () => {
   return (
     <div className="flex flex-col lg:flex-row">
-      <div className="w-full lg:w-[48%] xl:w-[53%] ">
+      <div className="w-full 2lg:w-[47%] lg:w-[51%] xl:w-[47%] ">
 <div>
-<img src={image1} alt="Factory" className="w-full   h-auto" />
+<img src={Image1} alt="Factory" className="w-full   h-auto" />
 
 </div>
         <div className="p-10 bg-teal-500 text-white ">
@@ -39,7 +39,7 @@ const OurMissonVison = () => {
           </ul>
         </div>
       </div>
-      <div className="w-full xl:w-[53%] 2lg:w-[52%] lg:w-[53%]  flex flex-col">
+      <div className="w-full xl:w-[58%] 2lg:w-[57%] lg:w-[52%]  flex flex-col">
         <div className="p-10">
           <h2 className="text-4xl text-[#a78044] xl:pt-5 2lg:pt-0 pt-6 font-bold mb-4">Our Vision</h2>
 
@@ -66,7 +66,7 @@ const OurMissonVison = () => {
             </li>
           </ul>
         </div>
-        <div className="xl:mt-4 2lg:mt-0 mt-4 ">
+        <div className="xl:mt-[22px] 2lg:mt-1 mt-4 lg:mt-[14px]">
         <img src={image2} alt="Tree" className="w-full h-auto" />
 
         </div>
