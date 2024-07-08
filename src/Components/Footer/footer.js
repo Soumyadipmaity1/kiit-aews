@@ -50,7 +50,7 @@ const Footer = () => {
           <div className=" ">
             <h2 className="font-semibold pt-7 text-neutral-300 text-xl">Location</h2>
             <div className=" h-1 w-40 p-2 border-b-2 border-amber-300"></div>
-            <iframe className="mt-5"
+            <iframe className="mt-5 lg:w-80 2lg:w-[400px]"
       src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14962.547358826554!2d85.818928!3d20.356616!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a19093cc3e1974b%3A0x85a345e1f4fcce86!2sKIIT%20Student%20Activity%20Center%20-%20KSAC!5e0!3m2!1sen!2sin!4v1716546829538!5m2!1sen!2sin"
       width="400"
       height="250"
