@@ -14,7 +14,7 @@ const WhyChooseUs = () => {
     },
     {
       icon: <FaHandshake className="text-5xl text-green-600 mt-2  mx-auto" />,
-      title: 'Strengthen your Networks ',
+      title: 'Expand Connections ',
       description: 'Connect with animal welfare and environmental NGOs and professionals. Gain experience in project management, event planning, and fundraising to bolster your resume and demonstrate dedication to conservation and welfare causes.',
       link: '/members', 
     },
@@ -34,9 +34,10 @@ const WhyChooseUs = () => {
   ];
 
   return (
-    <div className="flex  justify-center space-x-4 p-6  ">
+    <>
+    <div className=" lg:flex-row lg:justify-center hidden 2lg:flex justify-center lg:space-x-4 lg:p-6  ">
       {cards.map((card, index) => (
-        <div key={index} className="bg-green-200 hover:bg-[#a4f5ce] w-96 p-6 rounded-lg text-center  hover:scale-105 transform transition-transform duration-300">
+        <div key={index} className="bg-green-200 hover:bg-[#a4f5ce] lg:w-96 w-80 lg:p-6 p-5  m-3 lg:m-0 rounded-lg text-center  hover:scale-105 transform transition-transform duration-300">
           <div className="mb-4">{card.icon}</div>
           <h2 className="text-xl font-bold text-gray-800 mb-2">{card.title}</h2>
           <p className="mb-4 text-gray-700 text-justify text-sm font-semibold">{card.description}</p>
@@ -50,6 +51,23 @@ const WhyChooseUs = () => {
         </div>
       ))}
     </div>
+    <div className="flex lg:flex-row flex-wrap lg:flex-none 2lg:hidden lg:justify-center  justify-center lg:space-x-4 lg:p-6  ">
+    {cards.map((card, index) => (
+      <div key={index} className="bg-green-200 hover:bg-[#a4f5ce] lg:w-96 w-80 lg:p-6 p-5  m-3 rounded-lg text-center  hover:scale-105 transform transition-transform duration-300">
+        <div className="mb-4">{card.icon}</div>
+        <h2 className="text-xl font-bold text-gray-800 mb-2">{card.title}</h2>
+        <p className="mb-4 text-gray-700 text-justify text-sm font-semibold">{card.description}</p>
+        <a 
+          href={card.link} 
+          className="flex items-center justify-center text-black font-semibold hover:underline hover:text-green-700 transition duration-300"
+        >
+          Learn More <FaArrowRight className="ml-2" />
+
+        </a>
+      </div>
+    ))}
+  </div>
+  </>
   );
 };
 
