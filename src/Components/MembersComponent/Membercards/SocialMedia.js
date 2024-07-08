@@ -202,8 +202,8 @@ const MemberPost = ({ title, imgSrc, social }) => (
           <FaTwitter size={25} />
         </a>
       </div>
-      <div className="absolute inset-0 flex mt-[220px] py-1 bg-white justify-center transition-opacity duration-300 opacity-0 group-hover:opacity-100">
-        <h3 className="text-center font-bold text-[16px]  text-black">{title}</h3>
+      <div className="absolute inset-0 flex mt-[220px] py-1 bg-green-500 justify-center transition-opacity duration-300 opacity-0 group-hover:opacity-100">
+        <h3 className="text-center font-bold text-[16px]  text-white">{title}</h3>
       </div>
     </div>
   </div>
