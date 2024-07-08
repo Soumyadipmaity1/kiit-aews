@@ -14,17 +14,17 @@ const memberData = [
             facebook: "https://facebook.com/soumyadip"
         }
     },
-    {
-        Words: "As a member, I wholeheartedly support our society's mission, advocating for animal welfare and making a meaningful impact in our community.",
-        // roll: "Roll Number here",
-        title: "Priyanshi Choudhury",
-        imgSrc: "./PriyanshiAssCo.jpg",
-        social: {
-            twitter: "https://twitter.com/soumyadip",
-            linkedin: "https://linkedin.com/in/soumyadip",
-            facebook: "https://facebook.com/soumyadip"
-        }
-    },
+    // {
+    //     Words: "As a member, I wholeheartedly support our society's mission, advocating for animal welfare and making a meaningful impact in our community.",
+    //     // roll: "Roll Number here",
+    //     title: "Priyanshi Choudhury",
+    //     imgSrc: "./PriyanshiAssCo.jpg",
+    //     social: {
+    //         twitter: "https://twitter.com/soumyadip",
+    //         linkedin: "https://linkedin.com/in/soumyadip",
+    //         facebook: "https://facebook.com/soumyadip"
+    //     }
+    // },
    
 ];
 
@@ -58,7 +58,7 @@ const AsstCoPost = ({ Words, roll, title, imgSrc, social }) => (
 );
 
 const Asstcoordinator = () => (
-    <div className="flex flex-wrap">
+    <div className="flex justify-center flex-wrap">
         {memberData.map((post, index) => (
             <AsstCoPost
                 key={index}
