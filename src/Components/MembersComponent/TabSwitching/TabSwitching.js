@@ -13,8 +13,8 @@ function TabSwitchingComponent() {
 
     return (
         <div className=" ">
-            <nav className="flex justify-center  sm:p-10 p-4 font-bold  ">
-            <div className="mr-4 font-bold">
+            <nav className="flex justify-center lg:p-10  p-5 font-bold  ">
+            <div className="lg:mr-4 font-bold">
                     <button
                         className={`btn btn-danger p-1 sm:px-5 px-4  team-switch-border  sm:text-xl  font-bold border-2 border-black rounded-3xl ${activeTab === 1
                             ? "text-white bg-black font-bold"
@@ -24,17 +24,17 @@ function TabSwitchingComponent() {
                     >Coordinators
                     </button>
                 </div>{" "}
-                <div className="mr-4 font-bold">
+                <div className="lg:mr-4 font-bold">
                     <button
                         className={`btn btn-danger p-1 sm:px-5 px-4  team-switch-border  sm:text-xl  font-bold border-2 border-black rounded-3xl ${activeTab === 2
                             ? "text-white bg-black font-bold"
                             : "text-black bg-white font-bold"
                             } `}
                         onClick={() => handleTabClick(2)}
-                    >Asst. Coordinators
+                    >Asst. Co.
                     </button>
                 </div>{" "}
-                <div className="mr-4 font-bold">
+                <div className="lg:mr-4 font-bold">
                     <button
                         className={`btn btn-danger p-1 sm:px-5 px-4  team-switch-border  sm:text-xl  font-bold border-2 border-black rounded-3xl ${activeTab === 3
                             ? "text-white bg-black font-bold"
@@ -44,7 +44,7 @@ function TabSwitchingComponent() {
                     >Leads
                     </button>
                 </div>{" "}
-                <div className="mx-4">
+                <div className="lg:mx-4">
                     <button
                         className={`btn btn-danger p-1 sm:px-5 px-4  team-switch-border sm:text-xl  font-bold  border-2 border-black rounded-3xl ${activeTab === 4
                             ? "text-white bg-black font-bold"
