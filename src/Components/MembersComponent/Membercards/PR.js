@@ -114,7 +114,7 @@ const memberData = [
     }
   },
   {
-    title: "NIKHIL RAJ SINHA",
+    title: "Nikhil Raj Sinha",
     imgSrc: "./NIKHILRAJSINHA_PR.jpg",
     social: {
       instagram: "https://instagram.com/",
