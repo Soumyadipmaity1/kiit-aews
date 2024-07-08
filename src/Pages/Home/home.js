@@ -13,18 +13,18 @@ export default function Home() {
         <div className=" justify-center items-center ">
            
             <HomeStart />
-            <div className='flex justify-center -mt-40'>  <GuildingPillars />
+            {/* <div className='flex justify-center -mt-40'>  <GuildingPillars />
                 <GuildingPillars />
                 <GuildingPillars />
-            </div>
+            </div> */}
             <AnalysisCount />
-            <div className='py-20  bg-[#11463d] px-10  '>
+            <div className='py-20  bg-[#11463d] lg:px-10 2lg:px-   '>
                 <h1 className='text-4xl font-bold text-white mx-auto text-center mb-12'>Why Choose Us?</h1>
             <WhyChoose />
             </div>
             <FAQ />
             <TestimonialSlider />
-            <div className='p-20 mx-auto'>
+            <div className='lg:p-20 mx-auto'>
                 <h1 className='text-4xl text-center   mx-auto font-semibold   pb-6'>Latest Blogs Post</h1>
                 <div className='w-60 mx-auto border-green-500 mb-14 border-[3.5px] rounded'></div>
 
