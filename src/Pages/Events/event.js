@@ -20,7 +20,7 @@ As our society’s tagline says “Pause for a Cause”, here we paused again on
           // image2Src="https://pixlr.com/images/index/ai-image-generator-one.webp"
         />
       </div>
-      <div className="lg:flex-row flex justify-center flex-col mx-10 2lg:mx-16  xl:mx-20 m-5 rounded-lg p-5 bg-slate-800">
+      <div className="lg:flex-row flex justify-center flex-col sm:mx-10 2lg:mx-16  xl:mx-20 m-5 rounded-lg p-5 bg-slate-800">
         <EventCard
           title="World Aids Day"
           date="1st December, 2023"
