@@ -7,13 +7,13 @@ const image2 =
 const OurMissonVison = () => {
   return (
     <div className="flex flex-col lg:flex-row">
-      <div className="w-full lg:w-[48%] ">
+      <div className="w-full lg:w-[48%] xl:w-[53%] ">
 <div>
 <img src={image1} alt="Factory" className="w-full   h-auto" />
 
 </div>
         <div className="p-10 bg-teal-500 text-white ">
-          <h2 className="text-4xl font-bold mb-4 ">Our Mission</h2>
+          <h2 className="text-4xl font-bold  2lg:mb-5 mb-4  ">Our Mission</h2>
           <ul class="list-disc text-[17px] font-semibold pl-5">
             <li>
 
@@ -39,9 +39,9 @@ const OurMissonVison = () => {
           </ul>
         </div>
       </div>
-      <div className="w-full lg:w-[53%]  flex flex-col">
+      <div className="w-full xl:w-[53%] 2lg:w-[52%] lg:w-[53%]  flex flex-col">
         <div className="p-10">
-          <h2 className="text-4xl text-[#a78044] pt-5 font-bold mb-4">Our Vision</h2>
+          <h2 className="text-4xl text-[#a78044] xl:pt-5 2lg:pt-0 pt-6 font-bold mb-4">Our Vision</h2>
 
           <ul class="list-disc pl-5 text-[#34240d] font-semibold text-[17px]">
             <li>
@@ -66,8 +66,8 @@ const OurMissonVison = () => {
             </li>
           </ul>
         </div>
-        <div className="mt-4 ">
-        <img src={image2} alt="Tree" className="w-full h-auto mt-auto" />
+        <div className="xl:mt-4 2lg:mt-0 mt-4 ">
+        <img src={image2} alt="Tree" className="w-full h-auto" />
 
         </div>
       </div>
