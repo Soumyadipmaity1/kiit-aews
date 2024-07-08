@@ -5,8 +5,8 @@ import Image from './photo_2024-05-14_17-42-08.jpg';
 const memberData = [
     {
         position: "General Volunteer ",
-        title: "Soumyadip Maity",
-        imgSrc: Image,
+        title: "Anuj Pandey",
+        imgSrc: "./gvimage/AnujPandey_GV.jpg",
         social: {
             instagram: "https://instagram.com/soumyadip",
             linkedin: "https://linkedin.com/in/soumyadip",
@@ -79,7 +79,7 @@ const LeadPost = ({ position, title, imgSrc, social }) => (
 );
 
 const Leads = () => (
-    <div className="flex flex-wrap">
+    <div className="flex justify-center flex-wrap">
         {memberData.map((post, index) => (
             <LeadPost
                 key={index}
