@@ -12,7 +12,7 @@ export default function Home() {
     return (
         <div className=" justify-center items-center ">
            
-            <HomeStart />
+            {/* <H/omeStart /> */}
             {/* <div className='flex justify-center -mt-40'>  <GuildingPillars />
                 <GuildingPillars />
                 <GuildingPillars />
