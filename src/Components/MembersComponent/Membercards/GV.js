@@ -58,15 +58,15 @@ const memberData = [
       twitter: "https://twitter.com/"
     }
   },
-  {
-    title: "Anuj Pandey",
-    imgSrc: "./gvimage/AnujPandey_GV.jpg",
-    social: {
-      instagram: "https://instagram.com/",
-      linkedin: "https://linkedin.com/in/",
-      twitter: "https://twitter.com/"
-    }
-  },
+  // {
+  //   title: "Anuj Pandey",
+  //   imgSrc: "./gvimage/AnujPandey_GV.jpg",
+  //   social: {
+  //     instagram: "https://instagram.com/",
+  //     linkedin: "https://linkedin.com/in/",
+  //     twitter: "https://twitter.com/"
+  //   }
+  // },
   {
     title: "Ashish Jha",
     imgSrc: "./gvimage/AshishJha_GV.jpg",
@@ -449,10 +449,10 @@ const memberData = [
 ]
 
 const MemberPost = ({ title, imgSrc, social }) => (
-  <div className="w-60 m-3  h-auto members  bg-slate-white shadow-md rounded-md overflow-hidden group">
+  <div className="w-60 m-3  h-60 members  bg-slate-white shadow-md rounded-md overflow-hidden group">
     <div className="relative rounded-t-md image overflow-hidden">
       <img
-        className="w-full rounded-t-md h-76 transition-transform duration-300 transform group-hover:scale-110"
+        className="w-full h-60 rounded-t-md h-76 transition-transform duration-300 transform group-hover:scale-110"
         src={imgSrc}
         alt="leadImage"
       />
