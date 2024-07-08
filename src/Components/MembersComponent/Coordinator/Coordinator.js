@@ -48,7 +48,7 @@ const CoordinatorPost = ({ Words, roll, title, imgSrc, social }) => (
 );
 
 const Coordinator = () => (
-    <div className="flex flex-wrap">
+    <div className="flex justify-center flex-wrap">
         {memberData.map((post, index) => (
             <CoordinatorPost
                 key={index}
