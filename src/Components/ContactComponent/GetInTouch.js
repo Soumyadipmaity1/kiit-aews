@@ -36,7 +36,7 @@ const GetInTouch = () => {
 
   return (
     <div className="py-12 px-4">
-      <h2 className="text-5xl font-bold text-center mb-4 text-green-700">Get in touch</h2>
+      <h2 className="text-5xl font-bold text-center 2lg:mb-10 mb-8 text-green-700">Get in touch</h2>
       <p className="text-center text-lg text-gray-500 my-5 mb-16">
       Ready to make a difference for animals? Let's discuss how we can help our furry friends scale new heights together.      </p>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
