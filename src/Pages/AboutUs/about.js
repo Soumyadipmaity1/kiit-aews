@@ -8,7 +8,7 @@ export default function About() {
           {" "}
             {/* <h1 className=" font-bold text pt-[23vh] text-yellow-400 font-serif text-center">
                 About Us </h1> */}
-          <h1 className="text-white text-6xl font-bold text font-serif text-center">Who We Are</h1>
+          <h1 className="text-white lg:text-6xl text-5xl font-bold text font-serif text-center">Who We Are</h1>
         </div>
 
         <AboutUsStart />
