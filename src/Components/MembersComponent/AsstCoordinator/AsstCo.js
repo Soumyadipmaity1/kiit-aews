@@ -5,9 +5,9 @@ import Image from './photo_2024-05-14_17-42-08.jpg';
 const memberData = [
     {
         Words: "As a member, I wholeheartedly support our society's mission, advocating for animal welfare and making a meaningful impact in our community.",
-        roll: "Roll Number here",
-        title: "Soumyadip Maity",
-        imgSrc: Image,
+        // roll: "Roll Number here",
+        title: "Sreeraj sahoo",
+        imgSrc: "./ShreerajAssCo.jpg",
         social: {
             twitter: "https://twitter.com/soumyadip",
             linkedin: "https://linkedin.com/in/soumyadip",
@@ -16,9 +16,9 @@ const memberData = [
     },
     {
         Words: "As a member, I wholeheartedly support our society's mission, advocating for animal welfare and making a meaningful impact in our community.",
-        roll: "Roll Number here",
-        title: "Soumyadip Maity",
-        imgSrc: Image,
+        // roll: "Roll Number here",
+        title: "Priyanshi Choudhury",
+        imgSrc: "./PriyanshiAssCo.jpg",
         social: {
             twitter: "https://twitter.com/soumyadip",
             linkedin: "https://linkedin.com/in/soumyadip",
