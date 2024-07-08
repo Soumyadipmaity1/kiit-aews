@@ -21,7 +21,7 @@ const AnalysisCount = () => {
               <div className="block-18 text-center">
                 <div className="text">
                   <strong className="number text-4xl font-bold text-green-600">
-                    <CountUp end={counter.number} duration={5} />
+                    <CountUp end={counter.number} duration={3} />
                   </strong>
                 </div>
                 <div className="text mt-2">
