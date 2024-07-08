@@ -41,15 +41,15 @@ const memberData = [
       twitter: "https://twitter.com/"
     }
   },
-  {
-    title: "Areen Thakur",
-    imgSrc: "./AreenThakur_PR.jpg",
-    social: {
-      instagram: "https://instagram.com/",
-      linkedin: "https://linkedin.com/in/",
-      twitter: "https://twitter.com/"
-    }
-  },
+  // {
+  //   title: "Areen Thakur",
+  //   imgSrc: "./AreenThakur_PR.jpg",
+  //   social: {
+  //     instagram: "https://instagram.com/",
+  //     linkedin: "https://linkedin.com/in/",
+  //     twitter: "https://twitter.com/"
+  //   }
+  // },
   {
     title: "Arpita Pal",
     imgSrc: "./ArpitaPal_PR.jpg",
