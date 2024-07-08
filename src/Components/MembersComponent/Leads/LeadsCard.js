@@ -16,8 +16,8 @@ const memberData = [
     {
 
         position: "Public Relation ",
-        title: "Soumyadip Maity",
-        imgSrc: Image,
+        title: "Areen Thakur",
+        imgSrc: "./AreenThakur_PR.jpg",
         social: {
             instagram: "https://instagram.com/soumyadip",
             linkedin: "https://linkedin.com/in/soumyadip",
@@ -38,8 +38,8 @@ const memberData = [
     {
 
         position: "Social Media ",
-        title: "Soumyadip Maity",
-        imgSrc: Image,
+        title: "Ashutosh Rout",
+        imgSrc: "./leadimage/SocialMediaLead.jpg",
         social: {
             instagram: "https://instagram.com/soumyadip",
             linkedin: "https://linkedin.com/in/soumyadip",
