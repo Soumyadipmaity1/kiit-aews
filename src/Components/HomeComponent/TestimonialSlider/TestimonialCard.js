@@ -59,7 +59,7 @@ const TestimonialCard = ({ cardType }) => {
   return (
     <div className='flex'>
       {selectedQuotes.map((quoteObj, index) => (
-        <div key={index} className='w-96 p-2 rounded-xl m-4 border-2 border-green-500 pt-8 px-8 shadow-md shadow-green-600 bg-white'>
+        <div key={index} className='sm:w-96 w-84 p-2 rounded-xl m-4 border-2 border-green-500 pt-8 px-8 shadow-md shadow-green-600 bg-white'>
           <h4 className='border-l-[3px] rounded-md bg-green-50 border-green-400 p-3'>"{quoteObj.quote}"</h4>
           <div className='flex pt-3'>
             <img className='w-20 py-3 bg-[#fd9ab9] m-3 rounded-full' src={quoteObj.imageSrc} alt={quoteObj.authorName} />
