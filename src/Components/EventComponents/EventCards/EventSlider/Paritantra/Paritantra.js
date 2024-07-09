@@ -5,7 +5,7 @@ import 'swiper/css/effect-fade';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { EffectFade, Navigation, Pagination, Autoplay } from 'swiper/modules';
-import ImageModal from './ImageModal';
+import ParitantraModal from './ImageModal';
 
 import Paritantra1 from './paritantra1.png';
 import Paritantra2 from './paritantra2.png';
@@ -35,9 +35,9 @@ const Paritantra = () => {
   };
 
   return (
-    <div className="relative m-10">
+    <div className="relative lg:m-2 ">
       <Swiper
-        className="w-[500px] border-4 border-black rounded-xl slider-shadow"
+        className="w-[400px] border-4 border-black rounded-xl slider-shadow"
         spaceBetween={30}
         effect={'fade'}
         autoplay={{
@@ -48,7 +48,7 @@ const Paritantra = () => {
       >
         {sliderImages.map((slide, index) => (
           <SwiperSlide key={index} onClick={handleSlideClick}>
-            <div className="relative w-[550px] h-[320px] cursor-pointer">
+            <div className="relative w-[400px] h-[230px] cursor-pointer">
               <img src={slide.url} alt={`Slide ${index + 1}`} className="w-[500px] h-[310px]" />
               <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black flex items-end justify-start px-5 py-3">
                 <div className="text-white font-bold text-2xl">Paritantra</div>
@@ -57,7 +57,7 @@ const Paritantra = () => {
           </SwiperSlide>
         ))}
       </Swiper>
-      <ImageModal isOpen={isModalOpen} onClose={handleCloseModal} />
+      <ParitantraModal isOpen={isModalOpen} onClose={handleCloseModal} />
     </div>
   );
 };
