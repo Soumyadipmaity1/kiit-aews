@@ -33,7 +33,8 @@ It was 1st Of December 2023. And it was World Aids Day. The fog had taken contro
           // image2Src="https://pixlr.com/images/index/ai-image-generator-one.webp"
         />
       </div>
-      <Paritantra/>
+  
+ 
     </section>
   );
 }
