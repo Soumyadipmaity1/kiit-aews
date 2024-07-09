@@ -1,7 +1,7 @@
 import EventCard from "../../Components/EventComponents/EventCards/EventCards";
 import EventImages from "../../Components/EventComponents/EventCards/EventImages";
 import EventStart from "../../Components/EventComponents/EventStart";
-
+import Paritantra from "../../Components/EventComponents/EventCards/EventSlider/Paritantra/Paritantra";
 export default function Event() {
   return (
     <section>
@@ -33,6 +33,7 @@ It was 1st Of December 2023. And it was World Aids Day. The fog had taken contro
           // image2Src="https://pixlr.com/images/index/ai-image-generator-one.webp"
         />
       </div>
+      <Paritantra/>
     </section>
   );
 }
