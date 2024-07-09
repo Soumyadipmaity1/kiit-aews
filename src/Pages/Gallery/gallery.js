@@ -6,7 +6,7 @@ import PhotoPopUpImages from "../../Components/PhotoPopup/Photopopup";
     return (
         <div>
             <GalleryStart/>
-            <div className="justify-center flex flex-wrap m-2 my-12 ">
+            <div className="justify-center flex flex-wrap m-2 lg:my-12 my-8 ">
       <Paritantra/>
       <Paritantra/>
       <Paritantra/>
