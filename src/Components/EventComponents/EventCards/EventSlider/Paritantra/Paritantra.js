@@ -35,7 +35,7 @@ const Paritantra = () => {
   };
 
   return (
-    <div className="relative lg:m-2 m-1 my-4">
+    <div className="relative lg:m-2 m-1 my-2">
       <Swiper
         className="w-[400px] border-4 border-black rounded-xl slider-shadow"
         spaceBetween={30}
