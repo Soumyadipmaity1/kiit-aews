@@ -14,9 +14,9 @@ function MemberCards() {
     return (
         <div className=" ">
             <nav className="flex justify-center  sm:pb-10 pb-4 font-bold  ">
-            <div className="mr-4 font-bold">
+            <div className="lg:mr-4 sm:mr-1 mr-0.5 font-semibold lg:font-bold">
                     <button
-                        className={`btn btn-danger p-1 sm:px-5 px-4  team-switch-border  sm:text-xl  font-bold border-2 border-black rounded-3xl ${activeTab === 1
+                        className={` p-1 sm:px-5 px-2 text-[12px]    sm:text-xl  font-bold sm:border-2 border-[1px]  border-black rounded-md ${activeTab === 1
                             ? "text-white   bg-green-500 font-bold"
                             : "text-black bg-white font-bold"
                             } `}
@@ -24,9 +24,9 @@ function MemberCards() {
                     >General Volunteers
                     </button>
                 </div>{" "}
-                <div className="mr-4 font-bold">
+                <div className="lg:mr-4 sm:mr-1 mx-0.5 font-semibold lg:font-bold">
                     <button
-                        className={`btn btn-danger p-1 sm:px-5 px-4  team-switch-border  sm:text-xl  font-bold border-2 border-black rounded-3xl ${activeTab === 2
+                        className={` p-1 sm:px-5 px-2 text-[12px]    sm:text-xl  font-bold sm:border-2 border-[1px]  border-black rounded-md ${activeTab === 2
                             ? "text-white bg-green-500 font-bold"
                             : "text-black bg-white font-bold"
                             } `}
@@ -34,19 +34,19 @@ function MemberCards() {
                     >Public Relation
                     </button>
                 </div>{" "}
-                <div className="mr-4 font-bold">
+                <div className="lg:mr-4 sm:mr-1 mx-0.5 font-semibold lg:font-bold">
                     <button
-                        className={`btn btn-danger p-1 sm:px-5 px-4  team-switch-border  sm:text-xl  font-bold border-2 border-black rounded-3xl ${activeTab === 3
+                        className={` p-1 sm:px-5 px-2 text-[12px]    sm:text-xl  font-bold sm:border-2 border-[1px]  border-black rounded-md ${activeTab === 3
                             ? "text-white bg-green-500 font-bold"
                             : "text-black bg-white font-bold"
                             } `}
                         onClick={() => handleTabClick(3)}
-                    >Research & Development
+                    >R & D
                     </button>
                 </div>{" "}
-                <div className="mx-4">
+                <div className="lg:mx-4  ml-0.5">
                     <button
-                        className={`btn btn-danger p-1 sm:px-5 px-4  team-switch-border sm:text-xl  font-bold  border-2 border-black rounded-3xl ${activeTab === 4
+                        className={` p-1 lg:p-1 sm:px-5 px-2 text-[12px]   sm:text-xl  font-bold  sm:border-2 border-[1px]  border-black rounded-md ${activeTab === 4
                             ? "text-white bg-green-500 font-bold"
                             : "text-black bg-white font-bold"
                             } `}
