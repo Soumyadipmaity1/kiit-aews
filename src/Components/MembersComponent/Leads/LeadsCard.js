@@ -49,10 +49,10 @@ const memberData = [
 ];
 
 const LeadPost = ({ position, title, imgSrc, social }) => (
-    <div className="w-60 m-5 h-auto team_main_bop_wrapper bg-slate-white shadow-md hover:text-white hover:bg-[#2cc868] rounded-md">
+    <div className="lg:w-60 w-40 lg:m-5 m-3 h-auto team_main_bop_wrapper bg-slate-white shadow-md hover:text-white hover:bg-[#2cc868] rounded-md">
         <div className="relative rounded-t-md image overflow-hidden">
             <img
-                className="w-full rounded-t-md h-76 transition-transform duration-300 transform hover:scale-110"
+                className="w-full rounded-t-md lg:h-76 h-40 transition-transform duration-300 transform hover:scale-110"
                 src={imgSrc}
                 alt="leadImage"
             />
@@ -70,10 +70,10 @@ const LeadPost = ({ position, title, imgSrc, social }) => (
             </div>
         </div>
         <div className="p-5 relative text-div">
-            <h3 className="text-center font-bold text-[20px]">{title}</h3>
+            <h3 className="text-center font-bold text-[15px] sm:text-[20px]">{title}</h3>
             {/* <h4 className="text-sm font-bold text-orange-500 text-center m-1">{roll}</h4> */}
 
-            <h4 className="text-center m-2 text-green-900 font-bold">{position}</h4>
+            <h4 className="text-center m-2 text-green-900 text-sm sm:text-base font-bold">{position}</h4>
         </div>
     </div>
 );
