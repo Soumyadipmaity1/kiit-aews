@@ -1,7 +1,7 @@
 
 
-import React from 'react';
 import { FaTwitter, FaLinkedin, FaInstagram } from 'react-icons/fa';
+import React, { useState } from 'react';
 
 const memberData = [
   {
@@ -449,10 +449,10 @@ const memberData = [
 ]
 
 const MemberPost = ({ title, imgSrc, social }) => (
-  <div className="w-60 m-3  h-60 members  bg-slate-white shadow-md rounded-md overflow-hidden group">
+  <div className="lg:w-60 w-40  m-3  lg:h-60 h-40 members  bg-slate-300 shadow-md rounded-md overflow-hidden group">
     <div className="relative rounded-t-md image overflow-hidden">
       <img
-        className="w-full h-60 rounded-t-md h-76 transition-transform duration-300 transform group-hover:scale-110"
+        className="w-full lg:h-60 h-40 rounded-t-md h-76 transition-transform duration-300 transform group-hover:scale-110"
         src={imgSrc}
         alt="leadImage"
       />
@@ -468,27 +468,42 @@ const MemberPost = ({ title, imgSrc, social }) => (
           <FaTwitter size={25} />
         </a>
       </div>
-      <div className="absolute inset-0 flex mt-[205px] py-1 bg-green-500 justify-center transition-opacity duration-300 opacity-0 group-hover:opacity-100">
+      <div className="absolute inset-0 flex sm:mt-[205px] mt-[131px] sm:py-1 py-0.5 bg-green-500 justify-center transition-opacity duration-300 opacity-0 group-hover:opacity-100">
         <h3 className="text-center font-bold text-[15px]  text-white">{title}</h3>
       </div>
     </div>
   </div>
 );
 
+const GV = () => {
+  const [visibleCount, setVisibleCount] = useState(20);
 
-const GV = () => (
-    <div className="flex justify-center flex-wrap">
-        {memberData.map((post, index) => (
-            <MemberPost
-                key={index}
-                position={post.position}
-                Words={post.Words}
-                title={post.title}
-                imgSrc={post.imgSrc}
-                social={post.social}
-            />
+  const loadMoreMembers = () => {
+    setVisibleCount(prevCount => prevCount + 20);
+  };
+
+  return (
+    <div className="flex flex-col items-center">
+      <div className="flex justify-center flex-wrap">
+        {memberData.slice(0, visibleCount).map((post, index) => (
+          <MemberPost
+            key={index}
+            title={post.title}
+            imgSrc={post.imgSrc}
+            social={post.social}
+          />
         ))}
+      </div>
+      {visibleCount < memberData.length && (
+        <button
+          onClick={loadMoreMembers}
+          className="mt-4 px-4 py-2 font-bold bg-green-500 text-white shadow-md border-[1px] border-gray-800 rounded-md"
+        >
+          Load More
+        </button>
+      )}
     </div>
-);
+  );
+};
 
 export default GV;
