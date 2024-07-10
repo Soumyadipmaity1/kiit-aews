@@ -13,10 +13,10 @@ function TabSwitchingComponent() {
 
     return (
         <div className=" ">
-            <nav className="flex justify-center lg:p-10  p-5 font-bold  ">
-            <div className="lg:mr-4 font-bold">
+            <nav className="flex justify-center lg:p-10  py-4 font-bold  ">
+            <div className="sm:mr-4 m-1 text-[17px] font-semibold lg:font-bold">
                     <button
-                        className={`btn btn-danger p-1 sm:px-5 px-4  team-switch-border  sm:text-xl  font-bold border-2 border-black rounded-3xl ${activeTab === 1
+                        className={`btn btn-danger p-1 sm:px-5 px-2  team-switch-border  sm:text-xl  lg:font-bold border-2 border-black rounded-3xl ${activeTab === 1
                             ? "text-white bg-black font-bold"
                             : "text-black bg-white font-bold"
                             } `}
@@ -24,19 +24,19 @@ function TabSwitchingComponent() {
                     >Coordinators
                     </button>
                 </div>{" "}
-                <div className="lg:mr-4 font-bold">
+                <div className="sm:mr-4 m-1 text-[17px] font-semibold lg:font-bold">
                     <button
-                        className={`btn btn-danger p-1 sm:px-5 px-4  team-switch-border  sm:text-xl  font-bold border-2 border-black rounded-3xl ${activeTab === 2
+                        className={`btn btn-danger p-1 sm:px-5 px-2  team-switch-border  sm:text-xl  lg:font-bold border-2 border-black rounded-3xl ${activeTab === 2
                             ? "text-white bg-black font-bold"
                             : "text-black bg-white font-bold"
                             } `}
                         onClick={() => handleTabClick(2)}
-                    >Asst. Co.
+                    >Asst.Co
                     </button>
                 </div>{" "}
-                <div className="lg:mr-4 font-bold">
+                <div className="sm:mr-4 m-1 text-[17px] font-semibold lg:font-bold">
                     <button
-                        className={`btn btn-danger p-1 sm:px-5 px-4  team-switch-border  sm:text-xl  font-bold border-2 border-black rounded-3xl ${activeTab === 3
+                        className={`btn btn-danger p-1 sm:px-5 px-2  team-switch-border  sm:text-xl  lg:font-bold border-2 border-black rounded-3xl ${activeTab === 3
                             ? "text-white bg-black font-bold"
                             : "text-black bg-white font-bold"
                             } `}
@@ -44,9 +44,9 @@ function TabSwitchingComponent() {
                     >Leads
                     </button>
                 </div>{" "}
-                <div className="lg:mx-4">
+                <div className="sm:mr-4 m-1 text-[17px] lg:font-bold font-semibold"lg>
                     <button
-                        className={`btn btn-danger p-1 sm:px-5 px-4  team-switch-border sm:text-xl  font-bold  border-2 border-black rounded-3xl ${activeTab === 4
+                        className={`btn btn-danger p-1 sm:px-5 px-2  team-switch-border sm:text-xl  lg:font-bold  border-2 border-black rounded-3xl ${activeTab === 4
                             ? "text-white bg-black font-bold"
                             : "text-black bg-white font-bold"
                             } `}
