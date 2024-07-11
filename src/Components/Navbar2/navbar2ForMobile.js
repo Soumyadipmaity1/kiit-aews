@@ -39,7 +39,7 @@ const Navbar2 = () => {
   };
 
   return (
-    <div className={`flex flex-col transform transition-all duration-300  px-4  ${isScrolled ? 'fixed top-0 left-0 right-0 z-50' : 'sticky'} bg-[#ffffff] justify-between py-2  ${isScrolled ? 'shadow-lg' : 'shadow-md'}`}>
+    <div className={`flex flex-col transform transition-all duration-300  px-4  ${isScrolled ? 'fixed top-0 left-0 right-0 z-50' : 'sticky'} bg-[#ffffff] justify-between sm:py-2 py-0.5  ${isScrolled ? 'shadow-lg' : 'shadow-md'}`}>
       <div className="flex justify-between items-center">
         <div className="flex items-center">
         <div className="flex justify-between lg:hidden">
