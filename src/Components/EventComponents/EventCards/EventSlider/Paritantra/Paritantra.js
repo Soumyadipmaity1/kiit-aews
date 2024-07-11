@@ -40,16 +40,22 @@ const Paritantra = () => {
         className="w-[400px] border-4 border-black rounded-xl slider-shadow"
         spaceBetween={30}
         effect={'fade'}
+        speed={1000}  // Adjusted speed for smoother slide transition
         autoplay={{
           delay: 2500,
           disableOnInteraction: false,
         }}
+    
         modules={[EffectFade, Navigation, Pagination, Autoplay]}
       >
         {sliderImages.map((slide, index) => (
           <SwiperSlide key={index} onClick={handleSlideClick}>
-            <div className="relative w-[400px] h-[230px] cursor-pointer">
-              <img src={slide.url} alt={`Slide ${index + 1}`} className="w-[500px] h-[310px]" />
+            <div className="relative w-[400px] h-[230px] cursor-pointer group">
+              <img
+                src={slide.url}
+                alt={`Slide ${index + 1}`}
+                className="w-[500px] h-[310px] object-cover transform transition-transform duration-300 group-hover:scale-105"
+              />
               <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black flex items-end justify-start px-5 py-3">
                 <div className="text-white font-bold text-2xl">Paritantra</div>
               </div>
