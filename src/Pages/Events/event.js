@@ -1,7 +1,6 @@
 import EventCard from "../../Components/EventComponents/EventCards/EventCards";
 import EventImages from "../../Components/EventComponents/EventCards/EventImages";
 import EventStart from "../../Components/EventComponents/EventStart";
-import Paritantra from "../../Components/EventComponents/EventCards/EventSlider/Paritantra/Paritantra";
 export default function Event() {
   return (
     <section>

@@ -9,7 +9,7 @@ import TabSwitchingComponent from "../../Components/MembersComponent/TabSwitchin
 
         <div>
             <MemberStart/>
-               <div className="p-10 mx-auto flex justify-center">
+               <div className="lg:p-10 py-10 mx-auto flex justify-center">
             <TabSwitchingComponent />
 
         </div>

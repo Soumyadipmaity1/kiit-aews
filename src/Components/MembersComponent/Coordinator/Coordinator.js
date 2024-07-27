@@ -19,7 +19,7 @@ const memberData = [
 ];
 
 const CoordinatorPost = ({ Words, roll, title, imgSrc, social }) => (
-    <div className="w-80 mx-auto h-auto team_main_bop_wrapper bg-slate-white shadow-md hover:text-white hover:bg-[#49b3ff] rounded-md">
+    <div className="w-64 mx-auto h-auto team_main_bop_wrapper bg-slate-white shadow-md hover:text-white hover:bg-[#49b3ff] rounded-md">
         <div className="relative rounded-t-md image overflow-hidden">
             <img
                 className="w-full rounded-t-md h-76 transition-transform duration-300 transform hover:scale-110"

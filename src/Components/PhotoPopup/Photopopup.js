@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import ImageModal from './popupImage';
+import p1 from './p1.png';
+import p2 from './p2.png';
+import p3 from './p3.png';
 
 const PhotoPopUpImages = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -16,29 +19,27 @@ const PhotoPopUpImages = () => {
   };
 
   const images = [
-    "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg",
-    "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg",
-    "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg",
-    "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg",
-    "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg",
-    "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg",
-    "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg",
-    "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg",
-    "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg",
+    p1,
+    p2,
+    p3,
   ];
 
   return (
-    <div className="App flex flex-col items-center justify-center min-h-screen bg-gray-100 p-10">
+    <div className="flex flex-col items-center justify-center bg-gray-100 p-10">
       <h1 className="text-4xl p-10 font-bold mb-4">Photo Gallery</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
         {images.map((src, index) => (
-          <img
-            key={index}
-            src={src}
-            alt={`Thumbnail ${index}`}
-            className="cursor-pointer imagestyle"
-            onClick={() => handleImageClick(src)}
-          />
+          <div key={index} className="relative border-4 border-[#262626] rounded-lg bg-black cursor-pointer overflow-hidden group">
+            <img
+              src={src}
+              alt={`Thumbnail ${index}`}
+              className="w-96 h-64 bg-image rounded-lg  object-cover transform bg-black border- border-black transition-transform duration-300 group-hover:scale-105"
+              onClick={() => handleImageClick(src)}
+            />
+            <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black flex items-end justify-start px-5 py-3">
+              <div className="text-white font-bold text-2xl">Featured</div>
+            </div>
+          </div>
         ))}
       </div>
       {isModalOpen && (

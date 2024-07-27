@@ -1,9 +1,9 @@
-import Aids from "../../Components/EventComponents/EventCards/EventSlider/AIDS/Aids";
-import Cleanness from "../../Components/EventComponents/EventCards/EventSlider/Cleanness/cleanness";
-import FoodDrive1 from "../../Components/EventComponents/EventCards/EventSlider/FoodDrive1/FoodDrive1";
-import FoodDrive2 from "../../Components/EventComponents/EventCards/EventSlider/FoodDrive2/FoodDrive2";
-import Paritantra from "../../Components/EventComponents/EventCards/EventSlider/Paritantra/Paritantra";
-import Plantation from "../../Components/EventComponents/EventCards/EventSlider/Plantation/Plantation";
+import Cleanness from "../../Components/GalleryComponent/EventSlider/Cleanness/cleanness"
+import FoodDrive1 from "../../Components/GalleryComponent/EventSlider/FoodDrive1/FoodDrive1";
+import FoodDrive2 from "../../Components/GalleryComponent/EventSlider/FoodDrive2/FoodDrive2";
+import Paritantra from "../../Components/GalleryComponent/EventSlider/Paritantra/Paritantra";
+import Plantation from "../../Components/GalleryComponent/EventSlider/Plantation/Plantation";
+import Aids from "../../Components/GalleryComponent/EventSlider/AIDS/Aids";
 import GalleryStart from "../../Components/GalleryComponent/GalleryStart";
 import PhotoPopUpImages from "../../Components/PhotoPopup/Photopopup";
 

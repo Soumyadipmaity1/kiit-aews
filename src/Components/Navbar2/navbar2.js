@@ -34,7 +34,7 @@ const Navbar2 = () => {
   }, []);
 
   return (
-    <div className={`flex ${isScrolled ? 'fixed top-0 left-0 right-0 z-50' : 'sticky'} bg-[#ffffff] justify-between  py-2 md:px-10 xl:px-28 ${isScrolled ? 'shadow-lg' : 'shadow-md'}`}>
+    <div className={`flex navbar ${isScrolled ? 'fixed top-0 left-0 right-0 z-50' : 'sticky'} bg-[#ffffff] justify-between  py-2 md:px-10 xl:px-28 ${isScrolled ? 'shadow-lg' : 'shadow-md'}`}>
       <div className="flex justify-between">
         <div className="m-3">
           <img src={kiit} alt="logo" className="h-10 " />
