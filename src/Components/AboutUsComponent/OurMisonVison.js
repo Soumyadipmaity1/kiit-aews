@@ -16,7 +16,6 @@ const OurMissonVison = () => {
           <h2 className="text-4xl font-bold  2lg:mb-5 mb-4  ">Our Mission</h2>
           <ul class="list-disc text-[17px] font-semibold pl-5">
             <li>
-
               To create a compassionate and informed student community dedicated
               to the welfare of animals.
             </li>
