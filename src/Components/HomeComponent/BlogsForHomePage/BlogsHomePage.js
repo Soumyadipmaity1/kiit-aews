@@ -1,59 +1,79 @@
-
+import { useState } from "react";
 const blogData = [
   {
-    date: "April 7, 2024",
-    author: "Raj Bose",
-    title: "The Ultimate Guide to Pet Care: Tips and Tricks for Every Pet Owner",
-    imgSrc: "https://cdn.pixabay.com/photo/2023/12/22/20/57/ai-generated-8464364_1280.jpg"
+    date: "July 9, 2024",
+    author: "Shiven Sisodia",
+    title: "From Barks to Tail Wags: The Secrets of Dog Behavior",
+    imgSrc: "https://thevillagevets.com/wp-content/uploads/2022/02/dog-tail-wagging.jpg",
+    url: "https://blog92804.wordpress.com/2024/07/09/from-barks-to-tail-wags-the-secrets-of-dog-behavior/"
   },
   {
-    date: "May 10, 2024",
-    author: "Alice Smith",
-    title: "10 Healthy Recipes for a Balanced Diet",
-    imgSrc: "https://static.independent.co.uk/2023/12/19/16/Hero_3_2%20image.png?quality=75&width=640&crop=3%3A2%2Csmart&auto=webp"
+    date: "July 8, 2024",
+    author: "Aditi & Soumyadip",
+    title: "Rising Seas, Changing Habitats: How Sea Level Rise Affects Coastal Animals & Environments",
+    imgSrc: "https://marine.copernicus.eu/sites/default/files/media/image/2023-10/Ocean_Warming_1.png",
+    url: "https://blog92804.wordpress.com/2024/07/08/rising-seas-changing-habitats-how-sea-level-rise-affects-coastal-animals-and-environments/"
   },
     {
-        date: "June 15, 2024",
-         author: " Christian Brown",
-        title: "The Best Workouts for a Healthy Lifestyle",
-        imgSrc:"https://i.cdn.newsbytesapp.com/images/l20720220204120901.jpeg",
-    },
-    {
-        date: "April 7, 2024",
-        author: "Raj Bose",
-        title: "The Ultimate Guide to Pet Care: Tips and Tricks for Every Pet Owner",
-        imgSrc: "https://cdn.pixabay.com/photo/2023/12/22/20/57/ai-generated-8464364_1280.jpg"
+        date: "July 5, 2024",
+        author: "Shruti Sinha",
+        title: "Government Subsidy on Solar Panels: Reducing Carbon Footprints in Every Household",
+        imgSrc: "https://cdn.gobankingrates.com/wp-content/uploads/2019/01/solar-panels-on-home-room-iStock-985363900.jpg",
+        url: "https://blog92804.wordpress.com/2024/07/05/government-subsidy-installation-of-solar-panels-moving-towards-minimal-carbon-footprints-in-every-household/"
       },
 ];
 
-const BlogPost = ({ date, author, title, imgSrc }) => (
-  <section className="w-80 h-96 rounded-xl mx-auto m-5 bg-slate-200 hover:shadow-lg">
-    <div className="hover:text-green-600  h-96 border-2 border-green-500 shadow-md shadow-green-600 bg-white rounded-xl">
-      <img className="w-80 rounded-t-[8px] h-56" src={imgSrc} alt="blogImage" />
-      <div className="flex p-4 justify-between font-bold text-gray-400 text-[12px]">
-        <h4 className="px-3">{date}</h4>
-        <h4 className="px-3">{author}</h4>
+
+const BlogPost = ({ date, author, title, imgSrc, url }) => (
+  <section className="w-[320px] rounded-xl m-4 bg-slate-200 hover:shadow-lg">
+    <a href={url} className="hover:text-green-600">
+      <div className="h-96 border-2 border-green-500 shadow-md shadow-green-600 bg-white rounded-xl">
+        <img className="w-80 rounded-t-[8px] h-56" src={imgSrc} alt="blogImage" />
+        <div className="flex p-4 justify-between font-bold text-gray-400 text-[12px]">
+          <h4 className="px-3">{date}</h4>
+          <h4 className="px-3">{author}</h4>
+        </div>
+        <div className="px-5 pb-7 text-[18px] cursor-pointer font-semibold">
+          <h3>{title}</h3>
+        </div>
       </div>
-      <div className="px-5 pb-7 text-[18px] cursor-pointer font-semibold">
-        <h3>{title}</h3>
-      </div>
-    </div>
+    </a>
   </section>
 );
 
-const BlogsForHome = () => (
-  <div className="flex flex-wrap">
-    {blogData.map((post, index) => (
-      <BlogPost
-        key={index}
-        date={post.date}
-        author={post.author}
-        title={post.title}
-        imgSrc={post.imgSrc}
-      />
-      
-    ))}
-  </div>
-);
+const BlogHome = () => {
+  const [visiblePosts, setVisiblePosts] = useState(10);
 
-export default BlogsForHome;
+  const showMorePosts = () => {
+    setVisiblePosts(prev => prev + 10);
+  };
+
+  return (
+    <div className="">
+    <div className="flex flex-wrap justify-center">
+      {blogData.slice(0, visiblePosts).map((post, index) => (
+        <BlogPost
+          key={index}
+          date={post.date}
+          author={post.author}
+          title={post.title}
+          imgSrc={post.imgSrc}
+          url={post.url}
+        />
+      ))}
+      </div>
+<div className="flex justify-center">
+{visiblePosts < blogData.length && (
+        <button
+          onClick={showMorePosts}
+          className="mt-8 px-4 py-2 text-center font-bold  bg-green-500 text-white rounded-lg hover:bg-green-700"
+        >
+          Read More
+        </button>
+      )}
+</div>
+    </div>
+  );
+};
+
+export default BlogHome;
