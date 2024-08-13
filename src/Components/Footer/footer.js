@@ -62,10 +62,13 @@ const Footer = () => {
     />
           </div>
         </div>
-        <div className="w-full mx-auto py-5 pb-8">
+        <div className="w-full mx-auto py-5 pb-">
           <hr className="my-3 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-5" />
-          <span className="text-sm text-gray-500 flex justify-center text-center dark:text-gray-400">
+          <span className="text-md font-semibold text-gray-400 flex justify-center text-center ">
             © 2024 KIIT Animal & Environment Welfare Society™. All Rights Reserved.
+          </span>
+          <span className="text-sm text-gray-400 flex justify-center text-center">
+            Develop by <Link to="https://soumyadipmaity.vercel.app"     target="_blank"  className="hover:underline px-1 text-green-300"> Soumyadip Maity</Link>
           </span>
         </div>
       </footer>
@@ -128,11 +131,22 @@ const Footer = () => {
     />
           </div>
 
-        <div className="w-full  mx-auto p-2 md:py-6">
+        <div className="w-full  mx-auto">
           <hr className="my-3 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-5" />
-          <span className="text-sm text-gray-500 flex justify-center text-center dark:text-gray-400">
-            ©2024 <Link to="/" className="hover:underline px-1"> KIIT Animal & Environment Welfare Society™</Link>
+          <span className="text-[14px] text-gray-400 flex justify-center text-center ">
+            ©2024 <Link to="/" className="hover:underline"> KIIT Animal & Environment Welfare Society™</Link>
           </span>
+          <span className="text-[12px] mt-1 text-gray-400 flex justify-center text-center">
+  Develop by 
+  <Link 
+    to="https://soumyadipmaity.vercel.app" 
+    target="_blank" 
+    className="hover:underline text-green-400 px-1"
+  >
+    Soumyadip Maity
+  </Link>
+</span>
+
         </div>
       </footer>
     </>
