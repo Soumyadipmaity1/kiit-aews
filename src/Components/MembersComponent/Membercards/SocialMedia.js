@@ -8,7 +8,7 @@ const memberData =
 
   {
     title: "Adila Afreen",
-    imgSrc: "./scimage/AdilaAfreen_SC.jpg",
+    imgSrc: "./scimage/AdilaAfreen_sc.jpg",
     social: {
       instagram: "https://instagram.com/",
       linkedin: "https://linkedin.com/in/",
@@ -35,7 +35,7 @@ const memberData =
   // },
   {
     title: "Apurba Sarangi",
-    imgSrc: "./scimage/ApurbaSarangi_SC.jpg",
+    imgSrc: "./scimage/ApurbaSarangi_sc.jpg",
     social: {
       instagram: "https://instagram.com/",
       linkedin: "https://linkedin.com/in/",
@@ -53,7 +53,7 @@ const memberData =
   },
   {
     title: "Manya Shree Deo",
-    imgSrc: "./scimage/ManyaShreeDeo_SC.jpg",
+    imgSrc: "./scimage/ManyaShreeDeo_sc.jpg",
     social: {
       instagram: "https://instagram.com/",
       linkedin: "https://linkedin.com/in/",
@@ -100,7 +100,7 @@ const memberData =
   },
   {
     title: "Anula Mishra",
-    imgSrc: "./scimage/anulamishra_SC.jpg",
+    imgSrc: "./scimage/anulamishra_sc.jpg",
     social: {
       instagram: "https://instagram.com/",
       linkedin: "https://linkedin.com/in/",
@@ -118,7 +118,7 @@ const memberData =
   },
   {
     title: "Ayushee kar",
-    imgSrc: "./scimage/Ayusheekar_SC.jpg",
+    imgSrc: "./scimage/Ayusheekar_sc.jpg",
     social: {
       instagram: "https://instagram.com/",
       linkedin: "https://linkedin.com/in/",
@@ -127,7 +127,7 @@ const memberData =
   },
   {
     title: "Samir Singh",
-    imgSrc: "./scimage/SamirSingh_SC.jpg",
+    imgSrc: "./scimage/SamirSingh_sc.jpg",
     social: {
       instagram: "https://instagram.com/",
       linkedin: "https://linkedin.com/in/",
@@ -136,7 +136,7 @@ const memberData =
   },
   {
     title: "Yash Sirola",
-    imgSrc: "./scimage/YashSirola_SC.jpg",
+    imgSrc: "./scimage/YashSirola_sc.jpg",
     social: {
       instagram: "https://instagram.com/",
       linkedin: "https://linkedin.com/in/",
@@ -145,7 +145,7 @@ const memberData =
   },
   {
     title: "Arya Krishna",
-    imgSrc: "./scimage/AryaKrishna_SC.jpg",
+    imgSrc: "./scimage/AryaKrishna_sc.jpg",
     social: {
       instagram: "https://instagram.com/",
       linkedin: "https://linkedin.com/in/",
@@ -154,7 +154,7 @@ const memberData =
   },
   {
     title: "Dyaipayan Chatterjee",
-    imgSrc: "./scimage/DyaipayanChatterjee_SC.jpg",
+    imgSrc: "./scimage/DyaipayanChatterjee_SC.JPG",
     social: {
       instagram: "https://instagram.com/",
       linkedin: "https://linkedin.com/in/",
@@ -163,7 +163,7 @@ const memberData =
   },
   {
     title: "Rajdeep Banerjee",
-    imgSrc: "./scimage/RajdeepBanerjee_SC.jpg",
+    imgSrc: "./scimage/RajdeepBanerjee_sc.jpg",
     social: {
       instagram: "https://instagram.com/",
       linkedin: "https://linkedin.com/in/",
@@ -172,7 +172,7 @@ const memberData =
   },
   {
     title: "Rishav Kumar",
-    imgSrc: "./scimage/RishavKumar_SC.jpg",
+    imgSrc: "./scimage/Rishavkumar_sc.jpg",
     social: {
       instagram: "https://instagram.com/",
       linkedin: "https://linkedin.com/in/",
