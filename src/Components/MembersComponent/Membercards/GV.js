@@ -42,7 +42,7 @@ const memberData = [
   },
   {
     title: "Anchita Patro",
-    imgSrc: "./gvimage/Anchitapatro_GV.jpg",
+    imgSrc: "./gvimage/Anchitapatro_GV.JPG",
     social: {
       instagram: "https://instagram.com/",
       linkedin: "https://linkedin.com/in/",
