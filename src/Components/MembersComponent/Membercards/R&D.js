@@ -4,15 +4,15 @@ import React, { useState } from 'react';
 
 const memberData = [
 
-  {
-    title: "Aadhya Shrivastava",
-    imgSrc: "./rdimage/AadhyaShrivastava_Rd.jpg",
-    social: {
-      instagram: "https://instagram.com/",
-      linkedin: "https://linkedin.com/in/",
-      twitter: "https://twitter.com/"
-    }
-  },
+  // {
+  //   title: "Aadhya Shrivastava",
+  //   imgSrc: "./rdimage/AadhyaShrivastava_Rd.jpg",
+  //   social: {
+  //     instagram: "https://instagram.com/",
+  //     linkedin: "https://linkedin.com/in/",
+  //     twitter: "https://twitter.com/"
+  //   }
+  // },
   {
     title: "Soumyadip Maity",
     imgSrc: "./rdimage/SoumyadipMaity_rd.jpg",
@@ -22,15 +22,15 @@ const memberData = [
       twitter: "https://twitter.com/"
     }
   },
-  {
-    title: "ADITI",
-    imgSrc: "./rdimage/ADITI_rd.jpg",
-    social: {
-      instagram: "https://instagram.com/",
-      linkedin: "https://linkedin.com/in/",
-      twitter: "https://twitter.com/"
-    }
-  },
+  // {
+  //   title: "ADITI",
+  //   imgSrc: "./rdimage/ADITI_rd.jpg",
+  //   social: {
+  //     instagram: "https://instagram.com/",
+  //     linkedin: "https://linkedin.com/in/",
+  //     twitter: "https://twitter.com/"
+  //   }
+  // },
   {
     title: "Arin Kishore",
     imgSrc: "./rdimage/ArinKishore_rd.jpg",
