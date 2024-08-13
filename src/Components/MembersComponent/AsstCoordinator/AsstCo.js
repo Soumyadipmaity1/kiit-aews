@@ -6,33 +6,33 @@ const memberData = [
     {
         Words: "As a member, I wholeheartedly support our society's mission, advocating for animal welfare and making a meaningful impact in our community.",
         // roll: "Roll Number here",
-        title: "Sreeraj sahoo",
-        imgSrc: "./ShreerajAssCo.jpg",
+        title: "Anuj Pandey",
+        imgSrc: "./gvimage/AnujPandey_GV.jpg",
         social: {
             twitter: "https://twitter.com/soumyadip",
             linkedin: "https://linkedin.com/in/soumyadip",
             facebook: "https://facebook.com/soumyadip"
         }
     },
-    // {
-    //     Words: "As a member, I wholeheartedly support our society's mission, advocating for animal welfare and making a meaningful impact in our community.",
-    //     // roll: "Roll Number here",
-    //     title: "Priyanshi Choudhury",
-    //     imgSrc: "./PriyanshiAssCo.jpg",
-    //     social: {
-    //         twitter: "https://twitter.com/soumyadip",
-    //         linkedin: "https://linkedin.com/in/soumyadip",
-    //         facebook: "https://facebook.com/soumyadip"
-    //     }
-    // },
+    {
+        Words: "As a member, I wholeheartedly support our society's mission, advocating for animal welfare and making a meaningful impact in our community.",
+        // roll: "Roll Number here",
+        title: "ADITI",
+        imgSrc: "./rdimage/ADITI_rd.jpg",
+        social: {
+            twitter: "https://twitter.com/soumyadip",
+            linkedin: "https://linkedin.com/in/soumyadip",
+            facebook: "https://facebook.com/soumyadip"
+        }
+    },
    
 ];
 
 const AsstCoPost = ({ Words, roll, title, imgSrc, social }) => (
-    <div className="w-80 m-5 h-auto team_main_bop_wrapper bg-slate-white shadow-md hover:text-white hover:bg-[#d26eeb] rounded-md">
+    <div className="w-64 m-5 h-auto team_main_bop_wrapper bg-slate-white shadow-md hover:text-white hover:bg-green-500 rounded-md">
         <div className="relative rounded-t-md image overflow-hidden">
             <img
-                className="w-full rounded-t-md h-76 transition-transform duration-300 transform hover:scale-110"
+                className=" rounded-t-md h-64 transition-transform duration-300 transform hover:scale-110"
                 src={imgSrc}
                 alt="leadImage"
             />
@@ -49,10 +49,10 @@ const AsstCoPost = ({ Words, roll, title, imgSrc, social }) => (
                 </a>
             </div>
         </div>
-        <div className="p-5 relative text-div">
-            <h3 className="text-center font-bold text-[20px]">{title}</h3>
-            <h4 className="text-center m-2 text-green-900 font-bold">{roll}</h4>
-            <h4 className="text-sm">{Words}</h4>
+        <div className="p-3 relative text-div">
+            <h3 className="text-center font-bold text-[17px]">{title}</h3>
+            <h4 className="text-center  text-green-900 font-bold">{roll}</h4>
+            {/* <h4 className="text-sm">{Words}</h4> */}
         </div>
     </div>
 );
