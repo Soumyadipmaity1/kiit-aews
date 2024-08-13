@@ -26,8 +26,8 @@ const memberData = [
     {
         
         position: "R&D ",
-        title: "Dristi Gupta",
-        imgSrc: "./leadimage/DristiGupta_rd.JPEG",
+        title: "Aadhya Shrivastava",
+    imgSrc: "./rdimage/AadhyaShrivastava_Rd.jpg",
         social: {
             instagram: "https://instagram.com/soumyadip",
             linkedin: "https://linkedin.com/in/soumyadip",
@@ -69,10 +69,10 @@ const LeadPost = ({ position, title, imgSrc, social }) => (
             </div>
         </div>
         <div className="p-5 relative text-div">
-            <h3 className="text-center font-bold text-[15px] sm:[17px]  lg:text-[20px]">{title}</h3>
+            <h3 className="text-center font-bold text-[15px] sm:[17px]  lg:text-[18px]">{title}</h3>
             {/* <h4 className="text-sm font-bold text-orange-500 text-center m-1">{roll}</h4> */}
 
-            <h4 className="text-center m-2 text-green-900 text-[12px]  lg:text-base font-bold">{position}</h4>
+            <h4 className="text-center m-2 text-green-900 text-[11px]  lg:text-base font-bold">{position}</h4>
         </div>
     </div>
 );
