@@ -42,7 +42,7 @@ const memberData = [
   },
   {
     title: "Anchita Patro",
-    imgSrc: "./gvimage/Anchita Patro_GV.jpg",
+    imgSrc: "./gvimage/Anchitapatro_GV.jpg",
     social: {
       instagram: "https://instagram.com/",
       linkedin: "https://linkedin.com/in/",
@@ -132,7 +132,7 @@ const memberData = [
   },
   {
     title: "Indrayudh Mukherjee",
-    imgSrc: "./gvimage/IndrayudhMukherjee_GV.jpeg",
+    imgSrc: "./gvimage/IndrayudhMukherjee_GV.JPEG",
     social: {
       instagram: "https://instagram.com/",
       linkedin: "https://linkedin.com/in/",
@@ -168,7 +168,7 @@ const memberData = [
   },
   {
     title: "Krishna Sreekar Upadhayayula",
-    imgSrc: "./gvimage/KrishnaSreekarUpadhayayula_GV.png",
+    imgSrc: "./gvimage/KrishnaSreekarUpadhayayula_GV.PNG",
     social: {
       instagram: "https://instagram.com/",
       linkedin: "https://linkedin.com/in/",
@@ -186,7 +186,7 @@ const memberData = [
   },
   {
     title: "Mandal Soren",
-    imgSrc: "./gvimage/mandalsoren_gv.jpg",
+    imgSrc: "./gvimage/mandalsoren_gv.JPG",
     social: {
       instagram: "https://instagram.com/",
       linkedin: "https://linkedin.com/in/",
