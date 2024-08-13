@@ -6,8 +6,8 @@ const memberData = [
     {
         Words: "As a member, I wholeheartedly support our society's mission, advocating for animal welfare and making a meaningful impact in our community.",
         // roll: "Roll Number here",
-        title: "Prabir Kumar Nayak",
-        imgSrc: "./PrabirCoordinator.jpg",
+        title: "Dristi Gupta",
+        imgSrc: "./leadimage/DristiGupta_rd.JPEG",
         social: {
             twitter: "https://twitter.com/soumyadip",
             linkedin: "https://linkedin.com/in/soumyadip",
@@ -15,14 +15,24 @@ const memberData = [
         }
     },
     
-   
+    {
+        Words: "As a member, I wholeheartedly support our society's mission, advocating for animal welfare and making a meaningful impact in our community.",
+        // roll: "Roll Number here",
+        title: "Sreeraj sahoo",
+        imgSrc: "./ShreerajAssCo.jpg",
+        social: {
+            twitter: "https://twitter.com/soumyadip",
+            linkedin: "https://linkedin.com/in/soumyadip",
+            facebook: "https://facebook.com/soumyadip"
+        }
+    },
 ];
 
 const CoordinatorPost = ({ Words, roll, title, imgSrc, social }) => (
     <div className="w-64 mx-auto h-auto team_main_bop_wrapper bg-slate-white shadow-md hover:text-white hover:bg-[#49b3ff] rounded-md">
         <div className="relative rounded-t-md image overflow-hidden">
             <img
-                className="w-full rounded-t-md h-76 transition-transform duration-300 transform hover:scale-110"
+                className="w-full rounded-t-md h-60 transition-transform duration-300 transform hover:scale-110"
                 src={imgSrc}
                 alt="leadImage"
             />
@@ -40,9 +50,9 @@ const CoordinatorPost = ({ Words, roll, title, imgSrc, social }) => (
             </div>
         </div>
         <div className="p-5 relative text-div">
-            <h3 className="text-center font-bold text-[20px]">{title}</h3>
+            <h3 className="text-center font-bold text-[18px]">{title}</h3>
             <h4 className="text-center m-2 text-green-900 font-bold">{roll}</h4>
-            <h4 className="text-sm">{Words}</h4>
+            <h4 className="text-[12px]">{Words}</h4>
         </div>
     </div>
 );
