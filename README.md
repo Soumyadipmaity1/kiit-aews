@@ -17,7 +17,6 @@ Welcome to the official repository for the KIIT Animal and Welfare Society websi
 - **Support Injured Animals:**
   - Provide information on how to support and help injured animals.
 
-
   - Share resources and contact information for immediate assistance.
 
 ## Features
